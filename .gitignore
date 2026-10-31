@@ -1,3 +1,5 @@
 .DS_Store
 __pycache__/
 *.part.ogg
+node_modules/
+*.log

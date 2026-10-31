@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "book_id": "purusha-sukta",
+  "content_version": "2026.10.30.1",
+  "name": { "en": "Puruṣa Sūktam", "kn": "ಪುರುಷ ಸೂಕ್ತ", "sa": "पुरुषसूक्तम्" },
+  "verses": {
+    "catalog": "book/purusha-sukta/verses/catalog.csv",
+    "masters": {
+      "sa": "book/purusha-sukta/verses/master_sa.csv",
+      "en": "book/purusha-sukta/verses/master_en.csv",
+      "kn": "book/purusha-sukta/verses/master_kn.csv"
+    }
+  },
+  "experiences": ["sukta-chant"],
+  "files": [
+    "book/purusha-sukta/verses/catalog.csv",
+    "book/purusha-sukta/verses/master_sa.csv",
+    "book/purusha-sukta/verses/master_en.csv",
+    "book/purusha-sukta/verses/master_kn.csv",
+    "book/purusha-sukta/experience/sukta-chant/audio.csv",
+    "book/purusha-sukta/experience/sukta-chant/image.csv"
+  ]
+}

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 760" preserveAspectRatio="xMidYMid slice" role="img">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f5c56f"/><stop offset=".55" stop-color="#e8d5b3"/><stop offset="1" stop-color="#89a6a5"/></linearGradient>
+    <linearGradient id="land" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#728b65"/><stop offset="1" stop-color="#384f48"/></linearGradient>
+  </defs>
+  <rect width="640" height="760" fill="url(#sky)"/><circle cx="470" cy="180" r="74" fill="#f8de8b" opacity=".9"/>
+  <path d="M0 400 150 250 270 380 405 220 640 410V760H0Z" fill="#706f67" opacity=".72"/><path d="M0 450 180 350 310 430 475 320 640 440V760H0Z" fill="#536b63"/><path d="M0 500Q180 440 340 505T640 480V760H0Z" fill="url(#land)"/>
+  <g stroke="#cbbf83" stroke-width="5" opacity=".75"><path d="M0 575Q190 515 640 560"/><path d="M0 630Q230 570 640 615"/><path d="M0 690Q250 625 640 675"/></g>
+  <g transform="translate(210 468)" fill="#283b35"><circle cx="0" cy="0" r="15"/><path d="M-9 16 18 85H-22Z"/><path d="M7 35 60 70" stroke="#283b35" stroke-width="12" stroke-linecap="round"/><path d="M55 68 82 115" stroke="#583d2c" stroke-width="7"/></g>
+  <path d="M100 145q35-28 70 0m-35-18q30-25 62 2" fill="none" stroke="#4b5c5b" stroke-width="5" stroke-linecap="round"/>
+</svg>

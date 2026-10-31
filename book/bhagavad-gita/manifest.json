@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "book_id": "bhagavad-gita",
+  "content_version": "2026.10.30.1",
+  "name": { "en": "Bhagavad Gita", "kn": "ಭಗವದ್ಗೀತೆ", "sa": "भगवद्गीता" },
+  "verses": {
+    "catalog": "book/bhagavad-gita/verses/catalog.csv",
+    "masters": {
+      "sa": "book/bhagavad-gita/verses/master_sa.csv",
+      "en": "book/bhagavad-gita/verses/master_en.csv",
+      "kn": "book/bhagavad-gita/verses/master_kn.csv"
+    }
+  },
+  "resources": {
+    "questions": ["gita-sara-contemplations", "gita-sara-default-contemplation"],
+    "illustrations": ["gita-sara-illustrations", "gita-sara-default-illustration"],
+    "audio": ["chanting-swami-brahmananda", "chanting-aj-padma-aj-vijay-learn-mode"]
+  },
+  "experiences": ["gita-chant", "gita-yoga", "gita-700", "gita-sara"],
+  "files": [
+    "book/bhagavad-gita/verses/catalog.csv",
+    "book/bhagavad-gita/verses/master_sa.csv",
+    "book/bhagavad-gita/verses/master_en.csv",
+    "book/bhagavad-gita/verses/master_kn.csv",
+    "book/bhagavad-gita/questions/gita-sara-contemplations/catalog.csv",
+    "book/bhagavad-gita/questions/gita-sara-contemplations/master_en.csv",
+    "book/bhagavad-gita/questions/gita-sara-contemplations/master_kn.csv",
+    "book/bhagavad-gita/questions/gita-sara-default-contemplation/catalog.csv",
+    "book/bhagavad-gita/questions/gita-sara-default-contemplation/master_en.csv",
+    "book/bhagavad-gita/questions/gita-sara-default-contemplation/master_kn.csv",
+    "book/bhagavad-gita/illustration/gita-sara-illustrations/catalog.csv",
+    "book/bhagavad-gita/illustration/gita-sara-illustrations/master_en.csv",
+    "book/bhagavad-gita/illustration/gita-sara-illustrations/master_kn.csv",
+    "book/bhagavad-gita/illustration/gita-sara-default-illustration/catalog.csv",
+    "book/bhagavad-gita/illustration/gita-sara-default-illustration/master_en.csv",
+    "book/bhagavad-gita/illustration/gita-sara-default-illustration/master_kn.csv",
+    "book/bhagavad-gita/audio/chanting-swami-brahmananda/catalog.csv",
+    "book/bhagavad-gita/audio/chanting-aj-padma-aj-vijay-learn-mode/catalog.csv",
+    "book/bhagavad-gita/experience/gita-700/audio.csv",
+    "book/bhagavad-gita/experience/gita-700/images.csv",
+    "book/bhagavad-gita/experience/gita-yoga/audio.csv",
+    "book/bhagavad-gita/experience/gita-sara/audio.csv",
+    "book/bhagavad-gita/experience/gita-sara/contemplations.csv",
+    "book/bhagavad-gita/experience/gita-sara/decks.csv",
+    "book/bhagavad-gita/experience/gita-sara/illustrations.csv",
+    "book/bhagavad-gita/experience/gita-sara/media.csv",
+    "book/bhagavad-gita/experience/gita-sara/sequence.csv",
+    "image/bhagavad-gita/gita-sara/illustration/1.1-1.webp",
+    "image/bhagavad-gita/gita-sara/illustration/2-47-action.svg",
+    "image/bhagavad-gita/gita-sara/illustration/2-47-release.svg",
+    "image/bhagavad-gita/gita-sara/default/transformation-cycle-clean.png"
+  ]
+}

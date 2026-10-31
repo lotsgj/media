@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "book_id": "ganesha-atharva",
+  "content_version": "2026.10.30.1",
+  "name": { "en": "Gaṇeśātharvaśīrṣam", "kn": "ಗಣೇಶ ಅಥರ್ವಶೀರ್ಷ", "sa": "गणेशाथर्वशीर्षम्" },
+  "verses": {
+    "catalog": "book/ganesha-atharva/verses/catalog.csv",
+    "masters": {
+      "sa": "book/ganesha-atharva/verses/master_sa.csv",
+      "en": "book/ganesha-atharva/verses/master_en.csv",
+      "kn": "book/ganesha-atharva/verses/master_kn.csv"
+    }
+  },
+  "experiences": ["sukta-chant"],
+  "files": [
+    "book/ganesha-atharva/verses/catalog.csv",
+    "book/ganesha-atharva/verses/master_sa.csv",
+    "book/ganesha-atharva/verses/master_en.csv",
+    "book/ganesha-atharva/verses/master_kn.csv",
+    "book/ganesha-atharva/experience/sukta-chant/audio.csv",
+    "book/ganesha-atharva/experience/sukta-chant/image.csv"
+  ]
+}
