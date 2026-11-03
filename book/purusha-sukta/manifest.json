@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "book_id": "purusha-sukta",
-  "content_version": "2026.11.02.1",
+  "content_version": "2026.11.03.1",
   "name": { "en": "Puruṣa Sūktam", "kn": "ಪುರುಷ ಸೂಕ್ತ", "sa": "पुरुषसूक्तम्" },
   "verses": {
     "catalog": "book/purusha-sukta/verses/catalog.csv",

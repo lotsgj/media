@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "book_id": "bhagavad-gita",
-  "content_version": "2026.11.02.1",
+  "content_version": "2026.11.03.1",
   "name": { "en": "Bhagavad Gita", "kn": "ಭಗವದ್ಗೀತೆ", "sa": "भगवद्गीता" },
   "verses": {
     "catalog": "book/bhagavad-gita/verses/catalog.csv",

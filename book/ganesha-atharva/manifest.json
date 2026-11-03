@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "book_id": "ganesha-atharva",
-  "content_version": "2026.11.02.1",
+  "content_version": "2026.11.03.1",
   "name": { "en": "Gaṇeśātharvaśīrṣam", "kn": "ಗಣೇಶ ಅಥರ್ವಶೀರ್ಷ", "sa": "गणेशाथर्वशीर्षम्" },
   "verses": {
     "catalog": "book/ganesha-atharva/verses/catalog.csv",
