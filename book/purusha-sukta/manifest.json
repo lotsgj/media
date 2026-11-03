@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "book_id": "purusha-sukta",
-  "content_version": "2026.10.30.1",
+  "content_version": "2026.11.02.1",
   "name": { "en": "Puruṣa Sūktam", "kn": "ಪುರುಷ ಸೂಕ್ತ", "sa": "पुरुषसूक्तम्" },
   "verses": {
     "catalog": "book/purusha-sukta/verses/catalog.csv",
@@ -11,8 +11,26 @@
       "kn": "book/purusha-sukta/verses/master_kn.csv"
     }
   },
+  "registries": {
+    "verses": {
+      "structural": "book/purusha-sukta/registry/verses/collection.csv",
+      "localized": {
+        "sa": "book/purusha-sukta/registry/verses/collection_sa.csv",
+        "en": "book/purusha-sukta/registry/verses/collection_en.csv",
+        "kn": "book/purusha-sukta/registry/verses/collection_kn.csv"
+      }
+    },
+    "audio": "book/purusha-sukta/registry/audio/collection.csv",
+    "images": "book/purusha-sukta/registry/image/collection.csv"
+  },
   "experiences": ["sukta-chant"],
   "files": [
+    "book/purusha-sukta/registry/verses/collection.csv",
+    "book/purusha-sukta/registry/verses/collection_sa.csv",
+    "book/purusha-sukta/registry/verses/collection_en.csv",
+    "book/purusha-sukta/registry/verses/collection_kn.csv",
+    "book/purusha-sukta/registry/audio/collection.csv",
+    "book/purusha-sukta/registry/image/collection.csv",
     "book/purusha-sukta/verses/catalog.csv",
     "book/purusha-sukta/verses/master_sa.csv",
     "book/purusha-sukta/verses/master_en.csv",

@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "book_id": "bhagavad-gita",
-  "content_version": "2026.10.30.1",
+  "content_version": "2026.11.02.1",
   "name": { "en": "Bhagavad Gita", "kn": "ಭಗವದ್ಗೀತೆ", "sa": "भगवद्गीता" },
   "verses": {
     "catalog": "book/bhagavad-gita/verses/catalog.csv",
@@ -11,6 +11,20 @@
       "kn": "book/bhagavad-gita/verses/master_kn.csv"
     }
   },
+  "registries": {
+    "verses": {
+      "structural": "book/bhagavad-gita/registry/verses/collection.csv",
+      "localized": {
+        "sa": "book/bhagavad-gita/registry/verses/collection_sa.csv",
+        "en": "book/bhagavad-gita/registry/verses/collection_en.csv",
+        "kn": "book/bhagavad-gita/registry/verses/collection_kn.csv"
+      }
+    },
+    "audio": "book/bhagavad-gita/registry/audio/collection.csv",
+    "images": "book/bhagavad-gita/registry/image/collection.csv",
+    "deck": "book/bhagavad-gita/registry/deck/collection.csv",
+    "text": "book/bhagavad-gita/registry/questions/collection.csv"
+  },
   "resources": {
     "questions": ["gita-sara-contemplations", "gita-sara-default-contemplation"],
     "illustrations": ["gita-sara-illustrations", "gita-sara-default-illustration"],
@@ -18,6 +32,14 @@
   },
   "experiences": ["gita-chant", "gita-yoga", "gita-700", "gita-sara"],
   "files": [
+    "book/bhagavad-gita/registry/verses/collection.csv",
+    "book/bhagavad-gita/registry/verses/collection_sa.csv",
+    "book/bhagavad-gita/registry/verses/collection_en.csv",
+    "book/bhagavad-gita/registry/verses/collection_kn.csv",
+    "book/bhagavad-gita/registry/audio/collection.csv",
+    "book/bhagavad-gita/registry/image/collection.csv",
+    "book/bhagavad-gita/registry/deck/collection.csv",
+    "book/bhagavad-gita/registry/questions/collection.csv",
     "book/bhagavad-gita/verses/catalog.csv",
     "book/bhagavad-gita/verses/master_sa.csv",
     "book/bhagavad-gita/verses/master_en.csv",
@@ -45,6 +67,27 @@
     "book/bhagavad-gita/experience/gita-sara/illustrations.csv",
     "book/bhagavad-gita/experience/gita-sara/media.csv",
     "book/bhagavad-gita/experience/gita-sara/sequence.csv",
+    "book/bhagavad-gita/chapter-icons/catalog.csv",
+    "book/bhagavad-gita/chapter-icons/dhyana.svg",
+    "book/bhagavad-gita/chapter-icons/chapter-01.svg",
+    "book/bhagavad-gita/chapter-icons/chapter-02.svg",
+    "book/bhagavad-gita/chapter-icons/chapter-03.svg",
+    "book/bhagavad-gita/chapter-icons/chapter-04.svg",
+    "book/bhagavad-gita/chapter-icons/chapter-05.svg",
+    "book/bhagavad-gita/chapter-icons/chapter-06.svg",
+    "book/bhagavad-gita/chapter-icons/chapter-07.svg",
+    "book/bhagavad-gita/chapter-icons/chapter-08.svg",
+    "book/bhagavad-gita/chapter-icons/chapter-09.svg",
+    "book/bhagavad-gita/chapter-icons/chapter-10.svg",
+    "book/bhagavad-gita/chapter-icons/chapter-11.svg",
+    "book/bhagavad-gita/chapter-icons/chapter-12.svg",
+    "book/bhagavad-gita/chapter-icons/chapter-13.svg",
+    "book/bhagavad-gita/chapter-icons/chapter-14.svg",
+    "book/bhagavad-gita/chapter-icons/chapter-15.svg",
+    "book/bhagavad-gita/chapter-icons/chapter-16.svg",
+    "book/bhagavad-gita/chapter-icons/chapter-17.svg",
+    "book/bhagavad-gita/chapter-icons/chapter-18.svg",
+    "book/bhagavad-gita/deck/gita-sara-google-decks/catalog.csv",
     "image/bhagavad-gita/gita-sara/illustration/1.1-1.webp",
     "image/bhagavad-gita/gita-sara/illustration/2-47-action.svg",
     "image/bhagavad-gita/gita-sara/illustration/2-47-release.svg",

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "content_version": "2026.10.30.1",
+  "content_version": "2026.11.02.1",
   "updated_at": "2026-10-30T18:00:00+05:30",
   "books": [
     { "book_id": "bhagavad-gita", "manifest": "book/bhagavad-gita/manifest.json" },
