@@ -3,6 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "generate:manifests": "node scripts/generate-manifest-files.mjs",
     "validate": "node scripts/validate-media.mjs",
     "test": "node --test tests/*.test.mjs"
   }

@@ -1,7 +1,15 @@
 {
-  "schema_version": 1,
-  "content_version": "2026.11.03.1",
-  "updated_at": "2026-10-30T18:00:00+05:30",
+  "schema_version": 2,
+  "content_version": "2026.11.03.2",
+  "updated_at": "2026-11-03T12:00:00+05:30",
+  "mounts": [
+    { "prefix": "book/", "remote": "https://media.gitajyoti.org/", "local": "media" },
+    { "prefix": "audio/", "remote": "https://media.gitajyoti.org/", "local": "media" },
+    { "prefix": "image/", "remote": "https://media.gitajyoti.org/", "local": "media" },
+    { "prefix": "video/", "remote": "https://media.gitajyoti.org/", "local": "media" },
+    { "prefix": "deck/", "remote": "https://media.gitajyoti.org/", "local": "media" },
+    { "prefix": "docs/", "remote": "https://media.gitajyoti.org/", "local": "media" }
+  ],
   "books": [
     { "book_id": "bhagavad-gita", "manifest": "book/bhagavad-gita/manifest.json" },
     { "book_id": "ganesha-atharva", "manifest": "book/ganesha-atharva/manifest.json" },
