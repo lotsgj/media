@@ -1,13 +1,17 @@
+import { createHash } from 'node:crypto';
 import { readFile, stat } from 'node:fs/promises';
 import path from 'node:path';
 import { pathToFileURL } from 'node:url';
-import { collectManifestGraph } from './manifest-files.mjs';
 
 const root = path.resolve(import.meta.dirname, '..');
+const kitUrl = pathToFileURL(path.resolve(root, '../mygita/engine/js/content-kit.js')).href;
 const contractUrl = pathToFileURL(path.resolve(root, '../mygita/engine/js/media-contract.js')).href;
-const { normalizeMediaCatalog, safeMediaPath, selectMediaMount, validateBookManifest, validateDeckDescriptor } = await import(contractUrl);
+const { contentTree, openMedia, publish, checkFile } = await import(kitUrl);
+const { safeMediaPath, selectMediaMount, validateDeckDescriptor } = await import(contractUrl);
 const readJson = async (relative) => JSON.parse(await readFile(path.join(root, relative), 'utf8'));
-const catalog = normalizeMediaCatalog(await readJson('catalog.json'), { catalogRoot: 'https://media.gitajyoti.org/' });
+const readText = (logical) => readFile(path.join(root, logical), 'utf8');
+const media = await openMedia(readText);
+const catalog = media.catalog;
 const localPath = (logical) => {
   const safe = safeMediaPath(logical);
   const mount = selectMediaMount(catalog, safe);
@@ -38,13 +42,25 @@ async function validateVerseMasters(book) {
 
 for (const entry of catalog.books) {
   await assertFile(entry.manifest);
-  const book = validateBookManifest(await readJson(entry.manifest), entry.book_id);
+  const book = media.books.find((candidate) => candidate.id === entry.book_id).manifest;
   if (book.schema_version !== catalog.schema_version) throw new Error(`${entry.book_id} schema does not match the root catalog.`);
   if (book.content_version !== catalog.content_version) throw new Error(`${entry.book_id} content version does not match the root catalog.`);
-  const graph = await collectManifestGraph(root, book);
-  if (JSON.stringify(book.files) !== JSON.stringify(graph.files)) throw new Error(`${entry.book_id} files list is stale; run npm run generate:manifests.`);
-  for (const logical of graph.references) await assertFile(logical);
-  for (const logical of graph.files.filter((value) => value.startsWith('deck/') && value.endsWith('.json'))) validateDeckDescriptor(await readJson(logical));
+  for (const file of book.files) {
+    await assertFile(file.path);
+    const bytes = await readFile(localPath(file.path));
+    const actual = createHash('sha256').update(bytes).digest('hex');
+    if (actual !== file.hash) throw new Error(`${file.path} hash is stale; run npm run publish.`);
+    if (file.path.startsWith('deck/') && file.path.endsWith('.json')) validateDeckDescriptor(JSON.parse(bytes));
+  }
+  for (const group of await contentTree(media, entry.book_id)) for (const file of group.files) {
+    if (!file.path.endsWith('.csv') && !file.path.endsWith('.json')) continue;
+    const problems = checkFile(file, await readText(file.path));
+    if (problems.length) throw new Error(problems[0].message);
+  }
   await validateVerseMasters(book);
 }
+const digest = async (logical, replacement = null) => createHash('sha256').update(replacement ?? await readFile(localPath(logical))).digest('hex');
+const dryRun = await publish(media, { readText, hashOf: digest, releaseLabel: catalog.content_version, updatedAt: catalog.updated_at });
+if (dryRun.problems.blocking.length) throw new Error(dryRun.problems.blocking[0].message);
+if (dryRun.writes.length) throw new Error(`Published metadata is stale: ${dryRun.writes.map((write) => write.path).join(', ')}.`);
 console.log(`Validated media schema ${catalog.schema_version}, content ${catalog.content_version}, and ${catalog.books.length} books.`);

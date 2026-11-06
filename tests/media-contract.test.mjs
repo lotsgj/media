@@ -2,12 +2,10 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { execFileSync } from 'node:child_process';
 import { readFile, readdir } from 'node:fs/promises';
-import path from 'node:path';
-import { collectManifestGraph } from '../scripts/manifest-files.mjs';
 
 test('the portable media root and every declared book validate', async () => {
   const output = execFileSync(process.execPath, ['scripts/validate-media.mjs'], { encoding: 'utf8' });
-  assert.match(output, /Validated media schema 2/);
+  assert.match(output, /Validated media schema 3/);
   const catalog = JSON.parse(await readFile('catalog.json', 'utf8'));
   assert.deepEqual(catalog.books.map(({ book_id }) => book_id), ['bhagavad-gita', 'ganesha-atharva', 'purusha-sukta']);
 });
@@ -30,12 +28,23 @@ test('media-owned catalog URLs are logical and external URLs live only in deck d
   assert.match(descriptor.source, /^https:\/\/docs\.google\.com\//);
 });
 
-test('generated manifest file lists are metadata-only and current', async () => {
+test('generated manifests contain a complete hashed inventory and experience subsets', async () => {
   const catalog = JSON.parse(await readFile('catalog.json', 'utf8'));
+  assert.equal(catalog.schema_version, 3);
   for (const entry of catalog.books) {
+    assert.match(entry.manifest_hash, /^[a-f0-9]{64}$/);
     const manifest = JSON.parse(await readFile(entry.manifest, 'utf8'));
-    const generated = (await collectManifestGraph(path.resolve('.'), manifest)).files;
-    assert.deepEqual(manifest.files, generated);
-    assert.ok(generated.every((value) => /\.(?:csv|json)$/.test(value)));
+    assert.equal(manifest.schema_version, 3);
+    assert.ok(manifest.files.length > 0);
+    assert.ok(manifest.files.every(({ path, hash }) => path && /^[a-f0-9]{64}$/.test(hash)));
+    assert.equal(new Set(manifest.files.map(({ path }) => path)).size, manifest.files.length);
+    const declared = new Set(manifest.files.map(({ path }) => path));
+    for (const experience of manifest.experiences) {
+      assert.ok(experience.id);
+      assert.ok(experience.files.every((file) => declared.has(file)));
+    }
   }
+  const gita = JSON.parse(await readFile(catalog.books[0].manifest, 'utf8'));
+  assert.ok(gita.files.some(({ path }) => path.endsWith('.ogg')), 'binary audio is hash-addressed');
+  assert.ok(gita.files.some(({ path }) => path.endsWith('.webp')), 'binary images are hash-addressed');
 });

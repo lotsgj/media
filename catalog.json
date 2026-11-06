@@ -1,18 +1,54 @@
 {
-  "schema_version": 2,
-  "content_version": "2026.11.03.2",
-  "updated_at": "2026-11-03T12:00:00+05:30",
+  "schema_version": 3,
+  "content_version": "2026.11.06.1",
+  "updated_at": "2026-11-06T01:46:53.717Z",
   "mounts": [
-    { "prefix": "book/", "remote": "https://media.gitajyoti.org/", "local": "media" },
-    { "prefix": "audio/", "remote": "https://media.gitajyoti.org/", "local": "media" },
-    { "prefix": "image/", "remote": "https://media.gitajyoti.org/", "local": "media" },
-    { "prefix": "video/", "remote": "https://media.gitajyoti.org/", "local": "media" },
-    { "prefix": "deck/", "remote": "https://media.gitajyoti.org/", "local": "media" },
-    { "prefix": "docs/", "remote": "https://media.gitajyoti.org/", "local": "media" }
+    {
+      "prefix": "audio/",
+      "remote": "https://media.gitajyoti.org/",
+      "local": "media"
+    },
+    {
+      "prefix": "image/",
+      "remote": "https://media.gitajyoti.org/",
+      "local": "media"
+    },
+    {
+      "prefix": "video/",
+      "remote": "https://media.gitajyoti.org/",
+      "local": "media"
+    },
+    {
+      "prefix": "book/",
+      "remote": "https://media.gitajyoti.org/",
+      "local": "media"
+    },
+    {
+      "prefix": "deck/",
+      "remote": "https://media.gitajyoti.org/",
+      "local": "media"
+    },
+    {
+      "prefix": "docs/",
+      "remote": "https://media.gitajyoti.org/",
+      "local": "media"
+    }
   ],
   "books": [
-    { "book_id": "bhagavad-gita", "manifest": "book/bhagavad-gita/manifest.json" },
-    { "book_id": "ganesha-atharva", "manifest": "book/ganesha-atharva/manifest.json" },
-    { "book_id": "purusha-sukta", "manifest": "book/purusha-sukta/manifest.json" }
+    {
+      "book_id": "bhagavad-gita",
+      "manifest": "book/bhagavad-gita/manifest.json",
+      "manifest_hash": "237445b67c89796f14152b533b056e2346e462e8ed39a2f0fc3056f35d0db1bb"
+    },
+    {
+      "book_id": "ganesha-atharva",
+      "manifest": "book/ganesha-atharva/manifest.json",
+      "manifest_hash": "bc427c6ff126e16431649c33578076e3f416257874b7a438e800e0ed386e5da9"
+    },
+    {
+      "book_id": "purusha-sukta",
+      "manifest": "book/purusha-sukta/manifest.json",
+      "manifest_hash": "1a88e0b28147930728aa13c0060c3cc69cf68f42c8176b602a6d0046621a6759"
+    }
   ]
 }
