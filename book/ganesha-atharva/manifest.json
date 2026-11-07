@@ -1,5 +1,4 @@
 {
-  "schema_version": 3,
   "book_id": "ganesha-atharva",
   "content_version": "2026.11.06.1",
   "name": {
@@ -86,5 +85,6 @@
       "hash": "d7efef5f7f8bebfe5cc84837a1c642c525e01dd2fd6b641ef8a24396c81bb9d7"
     }
   ],
-  "updated_at": "2026-11-06T01:46:53.717Z"
+  "updated_at": "2026-11-06T01:46:53.717Z",
+  "content_kit_version": "3.20261107-051550"
 }

@@ -1,5 +1,4 @@
 {
-  "schema_version": 3,
   "book_id": "bhagavad-gita",
   "content_version": "2026.11.06.1",
   "name": {
@@ -4376,5 +4375,6 @@
       "hash": "e56776bf8753b5489c83c7bc9ecee0aca36276ec8141bb0de6fa55bc6166b499"
     }
   ],
-  "updated_at": "2026-11-06T01:46:53.717Z"
+  "updated_at": "2026-11-06T01:46:53.717Z",
+  "content_kit_version": "3.20261107-051550"
 }

@@ -1,5 +1,4 @@
 {
-  "schema_version": 3,
   "book_id": "purusha-sukta",
   "content_version": "2026.11.06.1",
   "name": {
@@ -86,5 +85,6 @@
       "hash": "da49bf2060936a21f7fed376337ec3556a543619a34211efcafc4b4a5e135774"
     }
   ],
-  "updated_at": "2026-11-06T01:46:53.717Z"
+  "updated_at": "2026-11-06T01:46:53.717Z",
+  "content_kit_version": "3.20261107-051550"
 }

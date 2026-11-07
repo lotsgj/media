@@ -3,6 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "build:inventory": "node scripts/build-content-kit3.mjs",
     "publish": "node scripts/publish-media.mjs",
     "validate": "node scripts/validate-media.mjs",
     "test": "node --test tests/*.test.mjs"

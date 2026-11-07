@@ -5,8 +5,13 @@ import { readFile, readdir } from 'node:fs/promises';
 
 test('the portable media root and every declared book validate', async () => {
   const output = execFileSync(process.execPath, ['scripts/validate-media.mjs'], { encoding: 'utf8' });
-  assert.match(output, /Validated media schema 3/);
+  assert.match(output, /Validated Content-Kit 3\.\d{8}-\d{6}/);
   const catalog = JSON.parse(await readFile('catalog.json', 'utf8'));
+  assert.match(catalog.content_kit_version, /^3\.\d{8}-\d{6}$/);
+  assert.equal(catalog.minimum_kit_version, catalog.content_kit_version);
+  assert.equal(catalog.mounts.length, 1);
+  assert.deepEqual(catalog.mounts[0].prefixes, ['audio/', 'image/', 'video/', 'book/', 'deck/', 'docs/']);
+  assert.equal(catalog.mounts[0].inventories.length, 1);
   assert.deepEqual(catalog.books.map(({ book_id }) => book_id), ['bhagavad-gita', 'ganesha-atharva', 'purusha-sukta']);
 });
 
@@ -30,11 +35,12 @@ test('media-owned catalog URLs are logical and external URLs live only in deck d
 
 test('generated manifests contain a complete hashed inventory and experience subsets', async () => {
   const catalog = JSON.parse(await readFile('catalog.json', 'utf8'));
-  assert.equal(catalog.schema_version, 3);
+  assert.equal(catalog.schema_version, undefined);
   for (const entry of catalog.books) {
     assert.match(entry.manifest_hash, /^[a-f0-9]{64}$/);
     const manifest = JSON.parse(await readFile(entry.manifest, 'utf8'));
-    assert.equal(manifest.schema_version, 3);
+    assert.equal(manifest.schema_version, undefined);
+    assert.equal(manifest.content_kit_version, catalog.content_kit_version);
     assert.ok(manifest.files.length > 0);
     assert.ok(manifest.files.every(({ path, hash }) => path && /^[a-f0-9]{64}$/.test(hash)));
     assert.equal(new Set(manifest.files.map(({ path }) => path)).size, manifest.files.length);
@@ -47,4 +53,14 @@ test('generated manifests contain a complete hashed inventory and experience sub
   const gita = JSON.parse(await readFile(catalog.books[0].manifest, 'utf8'));
   assert.ok(gita.files.some(({ path }) => path.endsWith('.ogg')), 'binary audio is hash-addressed');
   assert.ok(gita.files.some(({ path }) => path.endsWith('.webp')), 'binary images are hash-addressed');
+});
+
+test('the mount inventory explicitly declares every physical contract', async () => {
+  const inventory = JSON.parse(await readFile('files.json', 'utf8'));
+  assert.match(inventory.content_kit_version, /^3\.\d{8}-\d{6}$/);
+  assert.ok(inventory.files.length > 1000);
+  assert.equal(new Set(inventory.files.map(({ path }) => path)).size, inventory.files.length);
+  assert.ok(inventory.files.every((entry) => entry.path && entry.contract && entry.mime_type && entry.media_type && entry.size >= 0 && /^[a-f0-9]{64}$/.test(entry.hash)));
+  assert.ok(inventory.files.some((entry) => entry.contract === 'source-master'));
+  assert.ok(inventory.files.some((entry) => entry.contract === 'deck'));
 });
