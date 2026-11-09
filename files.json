@@ -1,5 +1,5 @@
 {
-  "content_kit_version": "4.20261109-091928",
+  "content_kit_version": "4.20261109-101633",
   "mount_id": "media",
   "files": [
     {
@@ -9313,7 +9313,7 @@
       "media_type": "book",
       "mime_type": "application/json",
       "size": 214243,
-      "hash": "b7dd9d26177ec544957b4756328ab437153516c1f283bc2660226ea7a24b7862",
+      "hash": "3d37bce37de17c94b2a8429f54b58555c4f290c15189debb5ca2c1ea69a37092",
       "contract": "manifest",
       "state": "active"
     },
@@ -9790,7 +9790,7 @@
       "media_type": "book",
       "mime_type": "application/json",
       "size": 5067,
-      "hash": "3c823e00ee22f138862b4e8a893e4f6e1ef4fc5794882e828e865e7a9f65eedd",
+      "hash": "9fbdf6c5c4e3a1846182a75c03aa45d64f19594bdd13402fdf2fe2b672145468",
       "contract": "manifest",
       "state": "active"
     },
@@ -9970,7 +9970,7 @@
       "media_type": "book",
       "mime_type": "application/json",
       "size": 4961,
-      "hash": "08236a24cf96935afc4f02582cc2595a3b89c4a8b28811e1d8efbbc9d2ad6f33",
+      "hash": "e7355fc34dc97f3f7b7999088d2dbf2f774923521aadeda882350536c7b4ce95",
       "contract": "manifest",
       "state": "active"
     },
