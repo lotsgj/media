@@ -1,5 +1,5 @@
 {
-  "content_kit_version": "4.20261109-085011",
+  "content_kit_version": "4.20261109-091928",
   "mount_id": "media",
   "files": [
     {
@@ -9313,7 +9313,7 @@
       "media_type": "book",
       "mime_type": "application/json",
       "size": 214243,
-      "hash": "c9c00f005e50068e1bd30e333c20393f60014780b11ff461c2f69d065158c235",
+      "hash": "b7dd9d26177ec544957b4756328ab437153516c1f283bc2660226ea7a24b7862",
       "contract": "manifest",
       "state": "active"
     },
@@ -9790,7 +9790,7 @@
       "media_type": "book",
       "mime_type": "application/json",
       "size": 5067,
-      "hash": "30a61df18b258c0e0d40e9cf301b2af24cf359b8aa19a3da28e64f1c4a6b9da6",
+      "hash": "3c823e00ee22f138862b4e8a893e4f6e1ef4fc5794882e828e865e7a9f65eedd",
       "contract": "manifest",
       "state": "active"
     },
@@ -9970,7 +9970,7 @@
       "media_type": "book",
       "mime_type": "application/json",
       "size": 4961,
-      "hash": "bb029ace6ea2195800debfb432cdf011215acc59be1d16687981a61af705f1f0",
+      "hash": "08236a24cf96935afc4f02582cc2595a3b89c4a8b28811e1d8efbbc9d2ad6f33",
       "contract": "manifest",
       "state": "active"
     },
@@ -10377,6 +10377,15 @@
       "size": 36,
       "hash": "851f73de514cb56561f526c63bf0cb4a0ff30bd6e9f83ebe1eff56eca35f015c",
       "contract": "ck4-cue-purposes-registry",
+      "state": "active"
+    },
+    {
+      "path": "registry/languages.csv",
+      "media_type": "registry",
+      "mime_type": "text/csv",
+      "size": 155,
+      "hash": "b4d5ab7c9e08bcd88d59d26f69e9db3f2098373576195d9ccb3f6fbe6c14fa16",
+      "contract": "ck4-languages-registry",
       "state": "active"
     },
     {

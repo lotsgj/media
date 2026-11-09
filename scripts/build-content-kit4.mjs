@@ -27,6 +27,7 @@ function contractFor(logical) {
   if (/\/registry\/verses\/collection_[a-z-]+\.csv$/.test(logical)) return 'verse-details';
   if (/^registry\/contributors\.csv$/.test(logical)) return 'ck4-contributors-registry';
   if (/^registry\/cue-purposes\.csv$/.test(logical)) return 'ck4-cue-purposes-registry';
+  if (/^registry\/languages\.csv$/.test(logical)) return 'ck4-languages-registry';
   if (previousContracts.has(logical)) return previousContracts.get(logical);
   if (!/\.(?:csv|json)$/i.test(logical)) return 'asset';
   throw new Error(`New structured file ${logical} requires an explicit contract entry before inventory generation.`);
