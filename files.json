@@ -1,5 +1,5 @@
 {
-  "content_kit_version": "3.20261107-051550",
+  "content_kit_version": "4.20261109-085011",
   "mount_id": "media",
   "files": [
     {
@@ -9312,8 +9312,8 @@
       "path": "book/bhagavad-gita/manifest.json",
       "media_type": "book",
       "mime_type": "application/json",
-      "size": 206231,
-      "hash": "0d2532a39e6e9e1122cc67414950a5cabad70abfcfb485fd631613e0cafa4d52",
+      "size": 214243,
+      "hash": "c9c00f005e50068e1bd30e333c20393f60014780b11ff461c2f69d065158c235",
       "contract": "manifest",
       "state": "active"
     },
@@ -9372,48 +9372,264 @@
       "state": "active"
     },
     {
+      "path": "book/bhagavad-gita/registry/audio/collection-metadata-variants.csv",
+      "media_type": "book",
+      "mime_type": "text/csv",
+      "size": 307,
+      "hash": "480fb621ce2fb73f5941efc36dbc0f5aa7417d6e70651b98809031b92b414a53",
+      "contract": "ck4-variant-registry",
+      "state": "active"
+    },
+    {
       "path": "book/bhagavad-gita/registry/audio/collection.csv",
       "media_type": "book",
       "mime_type": "text/csv",
-      "size": 421,
-      "hash": "253bcfcf9d44666e842024f2f45e463d1156850d4dbecfcc632b994c26e2f81a",
-      "contract": "audio-registry",
+      "size": 147,
+      "hash": "3128287599453f19c59485e10a7c205692d519950a41598adc985f3f4291c0b4",
+      "contract": "ck4-collection-registry",
+      "state": "active"
+    },
+    {
+      "path": "book/bhagavad-gita/registry/audio/defaults.csv",
+      "media_type": "book",
+      "mime_type": "text/csv",
+      "size": 288,
+      "hash": "fbaa52ae68091534c9034ee05c29092b7a8176292156211746612072f115d86f",
+      "contract": "ck4-defaults-registry",
+      "state": "active"
+    },
+    {
+      "path": "book/bhagavad-gita/registry/audio/metadata/chanting-aj-padma-aj-vijay-learn-mode-en.csv",
+      "media_type": "book",
+      "mime_type": "text/csv",
+      "size": 151,
+      "hash": "f0bd31098c35661ff0ce9bd4745e502b58c146d9c366d2ea758f379222b13b70",
+      "contract": "ck4-collection-metadata",
+      "state": "active"
+    },
+    {
+      "path": "book/bhagavad-gita/registry/audio/metadata/chanting-swami-brahmananda-en.csv",
+      "media_type": "book",
+      "mime_type": "text/csv",
+      "size": 130,
+      "hash": "c099420342d09dd60bd8919f2080b727c443eecd74d23ff0ba494796854b90c7",
+      "contract": "ck4-collection-metadata",
+      "state": "active"
+    },
+    {
+      "path": "book/bhagavad-gita/registry/audio/recording-variants.csv",
+      "media_type": "book",
+      "mime_type": "text/csv",
+      "size": 358,
+      "hash": "77a6cc13119e47bbbefbb13b01b5cc379a166f76745cf109e189e5bf2a1a3689",
+      "contract": "ck4-variant-registry",
+      "state": "active"
+    },
+    {
+      "path": "book/bhagavad-gita/registry/deck/collection-metadata-variants.csv",
+      "media_type": "book",
+      "mime_type": "text/csv",
+      "size": 157,
+      "hash": "4998c74dca23b291992faa58fc58ddb6ca7d9db5c0c18ba345df957f180a286d",
+      "contract": "ck4-variant-registry",
       "state": "active"
     },
     {
       "path": "book/bhagavad-gita/registry/deck/collection.csv",
       "media_type": "book",
       "mime_type": "text/csv",
-      "size": 193,
-      "hash": "40da632b80f23677a76a74f527f3815262110cafb928ebc32cf6d748a89c46ba",
-      "contract": "deck-registry",
+      "size": 68,
+      "hash": "1bccf1d466009804e0187c680eed9f85be0b1d1344cb7f52d8110724647c6e35",
+      "contract": "ck4-collection-registry",
+      "state": "active"
+    },
+    {
+      "path": "book/bhagavad-gita/registry/deck/defaults.csv",
+      "media_type": "book",
+      "mime_type": "text/csv",
+      "size": 150,
+      "hash": "5bfad395706502d478f542d82f3e1fc47e9b2260a52ae89b9d58c6420945bd28",
+      "contract": "ck4-defaults-registry",
+      "state": "active"
+    },
+    {
+      "path": "book/bhagavad-gita/registry/deck/metadata/gita-sara-google-decks-en.csv",
+      "media_type": "book",
+      "mime_type": "text/csv",
+      "size": 126,
+      "hash": "703599ee97db7cbfb467855d47dad7255532c7beeb7ad8bb39aa4fc60a1464b3",
+      "contract": "ck4-collection-metadata",
+      "state": "active"
+    },
+    {
+      "path": "book/bhagavad-gita/registry/deck/presentation-variants.csv",
+      "media_type": "book",
+      "mime_type": "text/csv",
+      "size": 155,
+      "hash": "fde62ab07005180ca74ae5757c83edf8a3f48548422b000ba9187afb8ee0585e",
+      "contract": "ck4-variant-registry",
+      "state": "active"
+    },
+    {
+      "path": "book/bhagavad-gita/registry/image/collection-metadata-variants.csv",
+      "media_type": "book",
+      "mime_type": "text/csv",
+      "size": 390,
+      "hash": "3ef6b44d24000b29e7a0cb9c10bae322d2fb7a714df46d81da81e8e93e4aef83",
+      "contract": "ck4-variant-registry",
       "state": "active"
     },
     {
       "path": "book/bhagavad-gita/registry/image/collection.csv",
       "media_type": "book",
       "mime_type": "text/csv",
-      "size": 732,
-      "hash": "b0146ea44aab94c3af1f6ee5acfee903abcd5fcbe871a05cf59e33d791ef0e53",
-      "contract": "image-registry",
+      "size": 125,
+      "hash": "5dfc8210be03e21ea1d0de6eee003e5d450688f1b83031687e984bb1d21702bb",
+      "contract": "ck4-collection-registry",
       "state": "active"
     },
     {
-      "path": "book/bhagavad-gita/registry/questions/collection.csv",
+      "path": "book/bhagavad-gita/registry/image/defaults.csv",
       "media_type": "book",
       "mime_type": "text/csv",
-      "size": 632,
-      "hash": "5cce1da53d9e8a101676b9c7cd920582fa4cb3f4a1e8d5660eaab1dff2518c20",
-      "contract": "text-registry",
+      "size": 439,
+      "hash": "89fb4a8c02e21f4a55350eaf50c6656bbdd1f2096d532c8bdba44d3f3df6e050",
+      "contract": "ck4-defaults-registry",
       "state": "active"
     },
     {
-      "path": "book/bhagavad-gita/registry/verses/collection.csv",
+      "path": "book/bhagavad-gita/registry/image/image-variants.csv",
       "media_type": "book",
       "mime_type": "text/csv",
-      "size": 118,
-      "hash": "5276370c2d2e194f30ae3229c225d73f3887df421182b4e2b8dea426b3c667a4",
-      "contract": "verse-registry",
+      "size": 384,
+      "hash": "4d4d1f8f88f7705370f5744aa3af4a73705a19cbd50a9d2acc7db011bba12b8e",
+      "contract": "ck4-variant-registry",
+      "state": "active"
+    },
+    {
+      "path": "book/bhagavad-gita/registry/image/metadata-variants.csv",
+      "media_type": "book",
+      "mime_type": "text/csv",
+      "size": 511,
+      "hash": "e2b2b7009273e2c328d1ab000bd816391ca78fc6ebb777212d49cbfbcb82ac58",
+      "contract": "ck4-variant-registry",
+      "state": "active"
+    },
+    {
+      "path": "book/bhagavad-gita/registry/image/metadata/gita-chapter-icons-en.csv",
+      "media_type": "book",
+      "mime_type": "text/csv",
+      "size": 114,
+      "hash": "f1f4744b513866122beb1c53c865f000c82656b3aa8901c522f306fdce36664e",
+      "contract": "ck4-collection-metadata",
+      "state": "active"
+    },
+    {
+      "path": "book/bhagavad-gita/registry/image/metadata/gita-sara-default-illustration-en.csv",
+      "media_type": "book",
+      "mime_type": "text/csv",
+      "size": 150,
+      "hash": "ae62603fdb9ca5eeb064804045290607112a3e6ad3ecb5470a2576b02ddd3845",
+      "contract": "ck4-collection-metadata",
+      "state": "active"
+    },
+    {
+      "path": "book/bhagavad-gita/registry/image/metadata/gita-sara-illustrations-en.csv",
+      "media_type": "book",
+      "mime_type": "text/csv",
+      "size": 129,
+      "hash": "81e332f473e2698c2a8ab27e1fe7f6b31e3d2e9bf45d3e3a2d132b4110a83a13",
+      "contract": "ck4-collection-metadata",
+      "state": "active"
+    },
+    {
+      "path": "book/bhagavad-gita/registry/question/collection-metadata-variants.csv",
+      "media_type": "book",
+      "mime_type": "text/csv",
+      "size": 297,
+      "hash": "0e151722ec86b0da516b3fe81204f2e58806c970291a558577a1565e9f2f416d",
+      "contract": "ck4-variant-registry",
+      "state": "active"
+    },
+    {
+      "path": "book/bhagavad-gita/registry/question/collection.csv",
+      "media_type": "book",
+      "mime_type": "text/csv",
+      "size": 105,
+      "hash": "321fb7c4dca5f6aee5ae076badc8dfadbe24787dcef5b379f47aa8791785da00",
+      "contract": "ck4-collection-registry",
+      "state": "active"
+    },
+    {
+      "path": "book/bhagavad-gita/registry/question/defaults.csv",
+      "media_type": "book",
+      "mime_type": "text/csv",
+      "size": 242,
+      "hash": "f95fd41e227e769633137c6d52996e4f92882793344450b0e86663d182646028",
+      "contract": "ck4-defaults-registry",
+      "state": "active"
+    },
+    {
+      "path": "book/bhagavad-gita/registry/question/metadata/gita-sara-contemplations-en.csv",
+      "media_type": "book",
+      "mime_type": "text/csv",
+      "size": 132,
+      "hash": "e19fd1cd9ac410ef8b1d49a299ee39aaf9f53f67ce9581bdac9efc92d595af56",
+      "contract": "ck4-collection-metadata",
+      "state": "active"
+    },
+    {
+      "path": "book/bhagavad-gita/registry/question/metadata/gita-sara-default-contemplation-en.csv",
+      "media_type": "book",
+      "mime_type": "text/csv",
+      "size": 153,
+      "hash": "895f9875ba451fd2c97de3e1e47ba938a1f8346785a89ebac35497b8683ef798",
+      "contract": "ck4-collection-metadata",
+      "state": "active"
+    },
+    {
+      "path": "book/bhagavad-gita/registry/question/text-variants.csv",
+      "media_type": "book",
+      "mime_type": "text/csv",
+      "size": 491,
+      "hash": "62728fd86a698035774d3ec29642d038d6e1e1e170cdd084ef3197f84a653bcd",
+      "contract": "ck4-variant-registry",
+      "state": "active"
+    },
+    {
+      "path": "book/bhagavad-gita/registry/verse/collection-metadata-variants.csv",
+      "media_type": "book",
+      "mime_type": "text/csv",
+      "size": 293,
+      "hash": "2d55cf2177918fe8f9faebc8f4ed43360a4caa9a2d852043b1fb342daab5c771",
+      "contract": "ck4-variant-registry",
+      "state": "active"
+    },
+    {
+      "path": "book/bhagavad-gita/registry/verse/collection.csv",
+      "media_type": "book",
+      "mime_type": "text/csv",
+      "size": 59,
+      "hash": "f472c5dac1f94996e9e79cf0b2b4daede487f649587b92215f2853344107744f",
+      "contract": "ck4-collection-registry",
+      "state": "active"
+    },
+    {
+      "path": "book/bhagavad-gita/registry/verse/defaults.csv",
+      "media_type": "book",
+      "mime_type": "text/csv",
+      "size": 111,
+      "hash": "3dd946e874f33073d7efd236039a02dd916b577d36ed680d7744c5d4bb857363",
+      "contract": "ck4-defaults-registry",
+      "state": "active"
+    },
+    {
+      "path": "book/bhagavad-gita/registry/verse/text-variants.csv",
+      "media_type": "book",
+      "mime_type": "text/csv",
+      "size": 242,
+      "hash": "ee95553242cb34b0bbe01994b1691bbe61778cae5ad713229160fb9c1a06b110",
+      "contract": "ck4-variant-registry",
       "state": "active"
     },
     {
@@ -9441,6 +9657,78 @@
       "size": 198,
       "hash": "0ceeed9defce62cae29f54592f691472d621ff87c401fc07b61117cd8c8b196d",
       "contract": "verse-details",
+      "state": "active"
+    },
+    {
+      "path": "book/bhagavad-gita/runtime/registry/audio/collection.csv",
+      "media_type": "book",
+      "mime_type": "text/csv",
+      "size": 421,
+      "hash": "253bcfcf9d44666e842024f2f45e463d1156850d4dbecfcc632b994c26e2f81a",
+      "contract": "runtime-audio-registry",
+      "state": "active"
+    },
+    {
+      "path": "book/bhagavad-gita/runtime/registry/deck/collection.csv",
+      "media_type": "book",
+      "mime_type": "text/csv",
+      "size": 193,
+      "hash": "40da632b80f23677a76a74f527f3815262110cafb928ebc32cf6d748a89c46ba",
+      "contract": "runtime-deck-registry",
+      "state": "active"
+    },
+    {
+      "path": "book/bhagavad-gita/runtime/registry/image/collection.csv",
+      "media_type": "book",
+      "mime_type": "text/csv",
+      "size": 732,
+      "hash": "b0146ea44aab94c3af1f6ee5acfee903abcd5fcbe871a05cf59e33d791ef0e53",
+      "contract": "runtime-image-registry",
+      "state": "active"
+    },
+    {
+      "path": "book/bhagavad-gita/runtime/registry/questions/collection.csv",
+      "media_type": "book",
+      "mime_type": "text/csv",
+      "size": 632,
+      "hash": "5cce1da53d9e8a101676b9c7cd920582fa4cb3f4a1e8d5660eaab1dff2518c20",
+      "contract": "runtime-text-registry",
+      "state": "active"
+    },
+    {
+      "path": "book/bhagavad-gita/runtime/registry/verses/collection.csv",
+      "media_type": "book",
+      "mime_type": "text/csv",
+      "size": 118,
+      "hash": "5276370c2d2e194f30ae3229c225d73f3887df421182b4e2b8dea426b3c667a4",
+      "contract": "runtime-verse-registry",
+      "state": "active"
+    },
+    {
+      "path": "book/bhagavad-gita/runtime/registry/verses/collection_en.csv",
+      "media_type": "book",
+      "mime_type": "text/csv",
+      "size": 121,
+      "hash": "1e2152ce13ee291adac7a72d10417157e26938326ca6cfaa5e0c7ba15660ac03",
+      "contract": "runtime-verse-details",
+      "state": "active"
+    },
+    {
+      "path": "book/bhagavad-gita/runtime/registry/verses/collection_kn.csv",
+      "media_type": "book",
+      "mime_type": "text/csv",
+      "size": 217,
+      "hash": "8de17f3674e56186f9b4ab9a7af1cdc2617e4ffc2e66abef4ee0876bcdf65d8c",
+      "contract": "runtime-verse-details",
+      "state": "active"
+    },
+    {
+      "path": "book/bhagavad-gita/runtime/registry/verses/collection_sa.csv",
+      "media_type": "book",
+      "mime_type": "text/csv",
+      "size": 198,
+      "hash": "0ceeed9defce62cae29f54592f691472d621ff87c401fc07b61117cd8c8b196d",
+      "contract": "runtime-verse-details",
       "state": "active"
     },
     {
@@ -9501,36 +9789,45 @@
       "path": "book/ganesha-atharva/manifest.json",
       "media_type": "book",
       "mime_type": "application/json",
-      "size": 3265,
-      "hash": "005b1211e9638f2cedbea3cde09576aee3370760b85dfda11e26350b4afedf20",
+      "size": 5067,
+      "hash": "30a61df18b258c0e0d40e9cf301b2af24cf359b8aa19a3da28e64f1c4a6b9da6",
       "contract": "manifest",
       "state": "active"
     },
     {
-      "path": "book/ganesha-atharva/registry/audio/collection.csv",
+      "path": "book/ganesha-atharva/registry/verse/collection-metadata-variants.csv",
       "media_type": "book",
       "mime_type": "text/csv",
-      "size": 104,
-      "hash": "173e48b3647f070d83e57ae181a6b32fc66068f4cfe00df86424fbb11b6d7163",
-      "contract": "audio-registry",
+      "size": 305,
+      "hash": "fcb0df0ddceb64ca3763b9a653d5e68f02dcfd229a9f17e09ade2408fbf78cc3",
+      "contract": "ck4-variant-registry",
       "state": "active"
     },
     {
-      "path": "book/ganesha-atharva/registry/image/collection.csv",
+      "path": "book/ganesha-atharva/registry/verse/collection.csv",
       "media_type": "book",
       "mime_type": "text/csv",
-      "size": 91,
-      "hash": "8e1e4d3c4db7357bd37c3e93db6d758a11a77c4492c03c056270f3a94d07c171",
-      "contract": "image-registry",
+      "size": 61,
+      "hash": "d6f8491914dadcba3b8a3bb65c040c3ce3eafc1067e592ef62d002da68dc1ce4",
+      "contract": "ck4-collection-registry",
       "state": "active"
     },
     {
-      "path": "book/ganesha-atharva/registry/verses/collection.csv",
+      "path": "book/ganesha-atharva/registry/verse/defaults.csv",
       "media_type": "book",
       "mime_type": "text/csv",
-      "size": 124,
-      "hash": "e6167e1138d0dda8ee9eea9908411dd395ee24d72b6ce9695a1ec3ef34b75a52",
-      "contract": "verse-registry",
+      "size": 115,
+      "hash": "3859a592c065378c254ab718b6ef8e2e8d0fbc854e6de916b3d733d5027e8a91",
+      "contract": "ck4-defaults-registry",
+      "state": "active"
+    },
+    {
+      "path": "book/ganesha-atharva/registry/verse/text-variants.csv",
+      "media_type": "book",
+      "mime_type": "text/csv",
+      "size": 254,
+      "hash": "7d73b5929c7a8d024e3ebece058eae63050711a3c78405cd0e7dcdd273c50d0c",
+      "contract": "ck4-variant-registry",
       "state": "active"
     },
     {
@@ -9558,6 +9855,60 @@
       "size": 245,
       "hash": "c16865baa99a6a121b11d97b3d0fa70a3645fd8f37dc1e809a48b07968462b68",
       "contract": "verse-details",
+      "state": "active"
+    },
+    {
+      "path": "book/ganesha-atharva/runtime/registry/audio/collection.csv",
+      "media_type": "book",
+      "mime_type": "text/csv",
+      "size": 104,
+      "hash": "173e48b3647f070d83e57ae181a6b32fc66068f4cfe00df86424fbb11b6d7163",
+      "contract": "runtime-audio-registry",
+      "state": "active"
+    },
+    {
+      "path": "book/ganesha-atharva/runtime/registry/image/collection.csv",
+      "media_type": "book",
+      "mime_type": "text/csv",
+      "size": 91,
+      "hash": "8e1e4d3c4db7357bd37c3e93db6d758a11a77c4492c03c056270f3a94d07c171",
+      "contract": "runtime-image-registry",
+      "state": "active"
+    },
+    {
+      "path": "book/ganesha-atharva/runtime/registry/verses/collection.csv",
+      "media_type": "book",
+      "mime_type": "text/csv",
+      "size": 124,
+      "hash": "e6167e1138d0dda8ee9eea9908411dd395ee24d72b6ce9695a1ec3ef34b75a52",
+      "contract": "runtime-verse-registry",
+      "state": "active"
+    },
+    {
+      "path": "book/ganesha-atharva/runtime/registry/verses/collection_en.csv",
+      "media_type": "book",
+      "mime_type": "text/csv",
+      "size": 158,
+      "hash": "70e3f65e33f7f2fb7d2d4ab66efb47cbb9c5510298ae3015cad5b731ea3c06d5",
+      "contract": "runtime-verse-details",
+      "state": "active"
+    },
+    {
+      "path": "book/ganesha-atharva/runtime/registry/verses/collection_kn.csv",
+      "media_type": "book",
+      "mime_type": "text/csv",
+      "size": 248,
+      "hash": "e414df207d3f82cbc38f4e91ffab45f54c07c53f373ab2469e6f0f70d35a8c2d",
+      "contract": "runtime-verse-details",
+      "state": "active"
+    },
+    {
+      "path": "book/ganesha-atharva/runtime/registry/verses/collection_sa.csv",
+      "media_type": "book",
+      "mime_type": "text/csv",
+      "size": 245,
+      "hash": "c16865baa99a6a121b11d97b3d0fa70a3645fd8f37dc1e809a48b07968462b68",
+      "contract": "runtime-verse-details",
       "state": "active"
     },
     {
@@ -9618,36 +9969,45 @@
       "path": "book/purusha-sukta/manifest.json",
       "media_type": "book",
       "mime_type": "application/json",
-      "size": 3181,
-      "hash": "d33647617849163422997e5545e1f163e65032a8f752fdb1fe25bd88f3e44b6e",
+      "size": 4961,
+      "hash": "bb029ace6ea2195800debfb432cdf011215acc59be1d16687981a61af705f1f0",
       "contract": "manifest",
       "state": "active"
     },
     {
-      "path": "book/purusha-sukta/registry/audio/collection.csv",
+      "path": "book/purusha-sukta/registry/verse/collection-metadata-variants.csv",
       "media_type": "book",
       "mime_type": "text/csv",
-      "size": 104,
-      "hash": "173e48b3647f070d83e57ae181a6b32fc66068f4cfe00df86424fbb11b6d7163",
-      "contract": "audio-registry",
+      "size": 293,
+      "hash": "2913afb04141479de3b817b4b8fc919b272cdc878ebebd1f36b956fdd9e5aeee",
+      "contract": "ck4-variant-registry",
       "state": "active"
     },
     {
-      "path": "book/purusha-sukta/registry/image/collection.csv",
+      "path": "book/purusha-sukta/registry/verse/collection.csv",
       "media_type": "book",
       "mime_type": "text/csv",
-      "size": 91,
-      "hash": "8e1e4d3c4db7357bd37c3e93db6d758a11a77c4492c03c056270f3a94d07c171",
-      "contract": "image-registry",
+      "size": 59,
+      "hash": "8ac5c671a456fa309e05ef7d41b9abbe777551b5f0258545be51210cbcc556f0",
+      "contract": "ck4-collection-registry",
       "state": "active"
     },
     {
-      "path": "book/purusha-sukta/registry/verses/collection.csv",
+      "path": "book/purusha-sukta/registry/verse/defaults.csv",
       "media_type": "book",
       "mime_type": "text/csv",
-      "size": 118,
-      "hash": "70d5443d3a57e252b339b2336c955e71ee929ea06abf8a1e110c5735bfe2e76b",
-      "contract": "verse-registry",
+      "size": 111,
+      "hash": "f4f932f44d207ee52d09a2e883a61afc667dbb936a05bae2c1c14902e11e6f20",
+      "contract": "ck4-defaults-registry",
+      "state": "active"
+    },
+    {
+      "path": "book/purusha-sukta/registry/verse/text-variants.csv",
+      "media_type": "book",
+      "mime_type": "text/csv",
+      "size": 242,
+      "hash": "5eaa28695d196218497b779f2274bad2f021ffb7a56ce5d446fddebfc985aa02",
+      "contract": "ck4-variant-registry",
       "state": "active"
     },
     {
@@ -9675,6 +10035,60 @@
       "size": 205,
       "hash": "e87de1c398292024b67030a31fc9f9ac178441703e76261ff7c26d120000b5e8",
       "contract": "verse-details",
+      "state": "active"
+    },
+    {
+      "path": "book/purusha-sukta/runtime/registry/audio/collection.csv",
+      "media_type": "book",
+      "mime_type": "text/csv",
+      "size": 104,
+      "hash": "173e48b3647f070d83e57ae181a6b32fc66068f4cfe00df86424fbb11b6d7163",
+      "contract": "runtime-audio-registry",
+      "state": "active"
+    },
+    {
+      "path": "book/purusha-sukta/runtime/registry/image/collection.csv",
+      "media_type": "book",
+      "mime_type": "text/csv",
+      "size": 91,
+      "hash": "8e1e4d3c4db7357bd37c3e93db6d758a11a77c4492c03c056270f3a94d07c171",
+      "contract": "runtime-image-registry",
+      "state": "active"
+    },
+    {
+      "path": "book/purusha-sukta/runtime/registry/verses/collection.csv",
+      "media_type": "book",
+      "mime_type": "text/csv",
+      "size": 118,
+      "hash": "70d5443d3a57e252b339b2336c955e71ee929ea06abf8a1e110c5735bfe2e76b",
+      "contract": "runtime-verse-registry",
+      "state": "active"
+    },
+    {
+      "path": "book/purusha-sukta/runtime/registry/verses/collection_en.csv",
+      "media_type": "book",
+      "mime_type": "text/csv",
+      "size": 133,
+      "hash": "29b976958e79b09c9c75a891e730c1346a5f9b6656a5fdd504bed7517b905e11",
+      "contract": "runtime-verse-details",
+      "state": "active"
+    },
+    {
+      "path": "book/purusha-sukta/runtime/registry/verses/collection_kn.csv",
+      "media_type": "book",
+      "mime_type": "text/csv",
+      "size": 217,
+      "hash": "26458a4d8fb0d482da0865241a67569570a088d4328992a03169d8f2922d1d90",
+      "contract": "runtime-verse-details",
+      "state": "active"
+    },
+    {
+      "path": "book/purusha-sukta/runtime/registry/verses/collection_sa.csv",
+      "media_type": "book",
+      "mime_type": "text/csv",
+      "size": 205,
+      "hash": "e87de1c398292024b67030a31fc9f9ac178441703e76261ff7c26d120000b5e8",
+      "contract": "runtime-verse-details",
       "state": "active"
     },
     {
@@ -9945,6 +10359,24 @@
       "size": 934,
       "hash": "a667d8ef5bbfc6e5b06dfc7028896d42ba0b33c3e52746dc449ca5a9961427af",
       "contract": "asset",
+      "state": "active"
+    },
+    {
+      "path": "registry/contributors.csv",
+      "media_type": "registry",
+      "mime_type": "text/csv",
+      "size": 114,
+      "hash": "eab4f7735cc7b20c618b3f20af5976d8c10ed7641f85a241d89a35727a3dfb83",
+      "contract": "ck4-contributors-registry",
+      "state": "active"
+    },
+    {
+      "path": "registry/cue-purposes.csv",
+      "media_type": "registry",
+      "mime_type": "text/csv",
+      "size": 36,
+      "hash": "851f73de514cb56561f526c63bf0cb4a0ff30bd6e9f83ebe1eff56eca35f015c",
+      "contract": "ck4-cue-purposes-registry",
       "state": "active"
     },
     {

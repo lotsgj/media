@@ -1,31 +1,27 @@
 {
   "book_id": "ganesha-atharva",
-  "content_version": "2026.11.06.1",
+  "content_version": "2026.11.08.1",
+  "content_kit_version": "4.20261109-085011",
   "name": {
     "en": "Gaṇeśātharvaśīrṣam",
     "kn": "ಗಣೇಶ ಅಥರ್ವಶೀರ್ಷ",
     "sa": "गणेशाथर्वशीर्षम्"
   },
-  "verses": {
-    "catalog": "book/ganesha-atharva/verses/catalog.csv",
-    "masters": {
-      "sa": "book/ganesha-atharva/verses/master_sa.csv",
-      "en": "book/ganesha-atharva/verses/master_en.csv",
-      "kn": "book/ganesha-atharva/verses/master_kn.csv"
-    }
-  },
-  "registries": {
-    "verses": {
-      "structural": "book/ganesha-atharva/registry/verses/collection.csv",
-      "localized": {
-        "sa": "book/ganesha-atharva/registry/verses/collection_sa.csv",
-        "en": "book/ganesha-atharva/registry/verses/collection_en.csv",
-        "kn": "book/ganesha-atharva/registry/verses/collection_kn.csv"
+  "collections": [
+    {
+      "content_type": "verse",
+      "registry": "book/ganesha-atharva/registry/verse/collection.csv",
+      "defaults": "book/ganesha-atharva/registry/verse/defaults.csv",
+      "parts": {
+        "text": {
+          "variants": "book/ganesha-atharva/registry/verse/text-variants.csv"
+        },
+        "collection-metadata": {
+          "variants": "book/ganesha-atharva/registry/verse/collection-metadata-variants.csv"
+        }
       }
-    },
-    "audio": "book/ganesha-atharva/registry/audio/collection.csv",
-    "images": "book/ganesha-atharva/registry/image/collection.csv"
-  },
+    }
+  ],
   "experiences": [
     {
       "id": "sukta-chant",
@@ -35,6 +31,28 @@
       ]
     }
   ],
+  "runtime_view": {
+    "verses": {
+      "catalog": "book/ganesha-atharva/verses/catalog.csv",
+      "masters": {
+        "sa": "book/ganesha-atharva/verses/master_sa.csv",
+        "en": "book/ganesha-atharva/verses/master_en.csv",
+        "kn": "book/ganesha-atharva/verses/master_kn.csv"
+      }
+    },
+    "registries": {
+      "verses": {
+        "structural": "book/ganesha-atharva/runtime/registry/verses/collection.csv",
+        "localized": {
+          "sa": "book/ganesha-atharva/runtime/registry/verses/collection_sa.csv",
+          "en": "book/ganesha-atharva/runtime/registry/verses/collection_en.csv",
+          "kn": "book/ganesha-atharva/runtime/registry/verses/collection_kn.csv"
+        }
+      },
+      "audio": "book/ganesha-atharva/runtime/registry/audio/collection.csv",
+      "images": "book/ganesha-atharva/runtime/registry/image/collection.csv"
+    }
+  },
   "files": [
     {
       "path": "book/ganesha-atharva/experience/sukta-chant/audio.csv",
@@ -45,16 +63,20 @@
       "hash": "52d4314850e29e12419474daa16272eb4ee5c93489f8f6778d1ab31fb11005a8"
     },
     {
-      "path": "book/ganesha-atharva/registry/audio/collection.csv",
-      "hash": "173e48b3647f070d83e57ae181a6b32fc66068f4cfe00df86424fbb11b6d7163"
+      "path": "book/ganesha-atharva/registry/verse/collection-metadata-variants.csv",
+      "hash": "fcb0df0ddceb64ca3763b9a653d5e68f02dcfd229a9f17e09ade2408fbf78cc3"
     },
     {
-      "path": "book/ganesha-atharva/registry/image/collection.csv",
-      "hash": "8e1e4d3c4db7357bd37c3e93db6d758a11a77c4492c03c056270f3a94d07c171"
+      "path": "book/ganesha-atharva/registry/verse/collection.csv",
+      "hash": "d6f8491914dadcba3b8a3bb65c040c3ce3eafc1067e592ef62d002da68dc1ce4"
     },
     {
-      "path": "book/ganesha-atharva/registry/verses/collection.csv",
-      "hash": "e6167e1138d0dda8ee9eea9908411dd395ee24d72b6ce9695a1ec3ef34b75a52"
+      "path": "book/ganesha-atharva/registry/verse/defaults.csv",
+      "hash": "3859a592c065378c254ab718b6ef8e2e8d0fbc854e6de916b3d733d5027e8a91"
+    },
+    {
+      "path": "book/ganesha-atharva/registry/verse/text-variants.csv",
+      "hash": "7d73b5929c7a8d024e3ebece058eae63050711a3c78405cd0e7dcdd273c50d0c"
     },
     {
       "path": "book/ganesha-atharva/registry/verses/collection_en.csv",
@@ -66,6 +88,30 @@
     },
     {
       "path": "book/ganesha-atharva/registry/verses/collection_sa.csv",
+      "hash": "c16865baa99a6a121b11d97b3d0fa70a3645fd8f37dc1e809a48b07968462b68"
+    },
+    {
+      "path": "book/ganesha-atharva/runtime/registry/audio/collection.csv",
+      "hash": "173e48b3647f070d83e57ae181a6b32fc66068f4cfe00df86424fbb11b6d7163"
+    },
+    {
+      "path": "book/ganesha-atharva/runtime/registry/image/collection.csv",
+      "hash": "8e1e4d3c4db7357bd37c3e93db6d758a11a77c4492c03c056270f3a94d07c171"
+    },
+    {
+      "path": "book/ganesha-atharva/runtime/registry/verses/collection.csv",
+      "hash": "e6167e1138d0dda8ee9eea9908411dd395ee24d72b6ce9695a1ec3ef34b75a52"
+    },
+    {
+      "path": "book/ganesha-atharva/runtime/registry/verses/collection_en.csv",
+      "hash": "70e3f65e33f7f2fb7d2d4ab66efb47cbb9c5510298ae3015cad5b731ea3c06d5"
+    },
+    {
+      "path": "book/ganesha-atharva/runtime/registry/verses/collection_kn.csv",
+      "hash": "e414df207d3f82cbc38f4e91ffab45f54c07c53f373ab2469e6f0f70d35a8c2d"
+    },
+    {
+      "path": "book/ganesha-atharva/runtime/registry/verses/collection_sa.csv",
       "hash": "c16865baa99a6a121b11d97b3d0fa70a3645fd8f37dc1e809a48b07968462b68"
     },
     {
@@ -85,6 +131,5 @@
       "hash": "d7efef5f7f8bebfe5cc84837a1c642c525e01dd2fd6b641ef8a24396c81bb9d7"
     }
   ],
-  "updated_at": "2026-11-06T01:46:53.717Z",
-  "content_kit_version": "3.20261107-051550"
+  "updated_at": "2026-11-08T06:45:59.086Z"
 }

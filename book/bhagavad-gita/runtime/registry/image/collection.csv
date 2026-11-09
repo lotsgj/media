@@ -1,0 +1,4 @@
+collection_id#title#catalog_url#metadata_en_url#metadata_kn_url#attribution#license#source
+gita-chapter-icons#Gita Chapter Icons#book/bhagavad-gita/chapter-icons/catalog.csv#####
+gita-sara-illustrations#Gita Sara Illustrations#book/bhagavad-gita/illustration/gita-sara-illustrations/catalog.csv#book/bhagavad-gita/illustration/gita-sara-illustrations/master_en.csv#book/bhagavad-gita/illustration/gita-sara-illustrations/master_kn.csv###
+gita-sara-default-illustration#Gita Sara Default Illustration#book/bhagavad-gita/illustration/gita-sara-default-illustration/catalog.csv#book/bhagavad-gita/illustration/gita-sara-default-illustration/master_en.csv#book/bhagavad-gita/illustration/gita-sara-default-illustration/master_kn.csv###

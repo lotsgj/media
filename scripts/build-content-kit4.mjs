@@ -3,15 +3,30 @@ import { readFile, readdir, stat, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 
 const root = path.resolve(import.meta.dirname, '..');
-const kitVersionSource = await readFile(path.resolve(root, '../mygita/engine/js/content-kit-version.js'), 'utf8');
-const kitVersion = kitVersionSource.match(/CONTENT_KIT_VERSION\s*=\s*'([^']+)'/)?.[1];
-if (!/^3\.\d{8}-\d{6}$/.test(kitVersion || '')) throw new Error('Unable to read the approved Content-Kit 3 version.');
-const namespaces = new Set(['book', 'audio', 'image', 'video', 'deck', 'docs']);
+const kitVersionSource = await readFile(path.resolve(root, '../mygita/engine/js/content-kit-v4-version.js'), 'utf8');
+const kitVersion = kitVersionSource.match(/CONTENT_KIT_V4_VERSION\s*=\s*'([^']+)'/)?.[1];
+if (!/^4\.\d{8}-\d{6}$/.test(kitVersion || '')) throw new Error('Unable to read the approved Content-Kit 4 version.');
+const namespaces = new Set(['book', 'audio', 'image', 'video', 'deck', 'docs', 'registry']);
 const digest = (bytes) => createHash('sha256').update(bytes).digest('hex');
 let previousContracts = new Map();
 try { previousContracts = new Map(JSON.parse(await readFile(path.join(root, 'files.json'), 'utf8')).files.map((entry) => [entry.path, entry.contract])); } catch {}
 
 function contractFor(logical) {
+  if (logical.includes('/runtime/registry/')) {
+    if (/\/verses\/collection_[a-z-]+\.csv$/.test(logical)) return 'runtime-verse-details';
+    if (/\/verses\/collection\.csv$/.test(logical)) return 'runtime-verse-registry';
+    if (/\/audio\/collection\.csv$/.test(logical)) return 'runtime-audio-registry';
+    if (/\/image\/collection\.csv$/.test(logical)) return 'runtime-image-registry';
+    if (/\/questions\/collection\.csv$/.test(logical)) return 'runtime-text-registry';
+    if (/\/deck\/collection\.csv$/.test(logical)) return 'runtime-deck-registry';
+  }
+  if (/\/registry\/(?:verse|question|image|audio|video|deck)\/collection\.csv$/.test(logical)) return 'ck4-collection-registry';
+  if (/\/registry\/(?:verse|question|image|audio|video|deck)\/defaults\.csv$/.test(logical)) return 'ck4-defaults-registry';
+  if (/\/registry\/(?:verse|question|image|audio|video|deck)\/.+-variants\.csv$/.test(logical)) return 'ck4-variant-registry';
+  if (/\/registry\/(?:verse|question|image|audio|video|deck)\/metadata\/.+\.csv$/.test(logical)) return 'ck4-collection-metadata';
+  if (/\/registry\/verses\/collection_[a-z-]+\.csv$/.test(logical)) return 'verse-details';
+  if (/^registry\/contributors\.csv$/.test(logical)) return 'ck4-contributors-registry';
+  if (/^registry\/cue-purposes\.csv$/.test(logical)) return 'ck4-cue-purposes-registry';
   if (previousContracts.has(logical)) return previousContracts.get(logical);
   if (!/\.(?:csv|json)$/i.test(logical)) return 'asset';
   throw new Error(`New structured file ${logical} requires an explicit contract entry before inventory generation.`);
@@ -24,7 +39,7 @@ function mimeFor(logical) {
 
 function mediaTypeFor(logical, mime) {
   const namespace = logical.split('/')[0];
-  if (['audio', 'image', 'video', 'deck', 'book', 'docs'].includes(namespace)) return namespace;
+  if (['audio', 'image', 'video', 'deck', 'book', 'docs', 'registry'].includes(namespace)) return namespace;
   return mime.split('/')[0] || 'asset';
 }
 
@@ -49,6 +64,16 @@ for (const book of catalog.books) {
   const manifest = JSON.parse(await readFile(manifestPath, 'utf8'));
   delete manifest.schema_version;
   manifest.content_kit_version = kitVersion;
+  const bookPrefix = `book/${book.book_id}/`;
+  const existing = new Map((manifest.files || []).map((entry) => [entry.path, entry]));
+  for (const logical of [...existing.keys()]) {
+    try { await stat(path.join(root, logical)); } catch { existing.delete(logical); }
+  }
+  for (const logical of await listedFiles(path.join(root, 'book', book.book_id), bookPrefix.slice(0, -1))) {
+    if (!logical.includes('/registry/')) continue;
+    existing.set(logical, { path: logical, hash: digest(await readFile(path.join(root, logical))) });
+  }
+  manifest.files = [...existing.values()].sort((left, right) => left.path < right.path ? -1 : left.path > right.path ? 1 : 0);
   await writeFile(manifestPath, `${JSON.stringify(manifest, null, 2)}\n`);
   book.manifest_hash = digest(await readFile(manifestPath));
 }
@@ -67,8 +92,6 @@ catalog.minimum_kit_version = kitVersion;
 delete catalog.schema_version;
 catalog.mounts = [{
   mount_id: 'media',
-  // Transitional runtime routing only. Content-Kit ownership comes from files.json.
-  prefixes: ['audio/', 'image/', 'video/', 'book/', 'deck/', 'docs/'],
   remote: 'https://media.gitajyoti.org/',
   local: 'media',
   inventories: [{ id: 'all', path: 'files.json', hash: digest(Buffer.from(inventoryText)) }]

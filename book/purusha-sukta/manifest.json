@@ -1,31 +1,27 @@
 {
   "book_id": "purusha-sukta",
-  "content_version": "2026.11.06.1",
+  "content_version": "2026.11.08.1",
+  "content_kit_version": "4.20261109-085011",
   "name": {
     "en": "Puruṣa Sūktam",
     "kn": "ಪುರುಷ ಸೂಕ್ತ",
     "sa": "पुरुषसूक्तम्"
   },
-  "verses": {
-    "catalog": "book/purusha-sukta/verses/catalog.csv",
-    "masters": {
-      "sa": "book/purusha-sukta/verses/master_sa.csv",
-      "en": "book/purusha-sukta/verses/master_en.csv",
-      "kn": "book/purusha-sukta/verses/master_kn.csv"
-    }
-  },
-  "registries": {
-    "verses": {
-      "structural": "book/purusha-sukta/registry/verses/collection.csv",
-      "localized": {
-        "sa": "book/purusha-sukta/registry/verses/collection_sa.csv",
-        "en": "book/purusha-sukta/registry/verses/collection_en.csv",
-        "kn": "book/purusha-sukta/registry/verses/collection_kn.csv"
+  "collections": [
+    {
+      "content_type": "verse",
+      "registry": "book/purusha-sukta/registry/verse/collection.csv",
+      "defaults": "book/purusha-sukta/registry/verse/defaults.csv",
+      "parts": {
+        "text": {
+          "variants": "book/purusha-sukta/registry/verse/text-variants.csv"
+        },
+        "collection-metadata": {
+          "variants": "book/purusha-sukta/registry/verse/collection-metadata-variants.csv"
+        }
       }
-    },
-    "audio": "book/purusha-sukta/registry/audio/collection.csv",
-    "images": "book/purusha-sukta/registry/image/collection.csv"
-  },
+    }
+  ],
   "experiences": [
     {
       "id": "sukta-chant",
@@ -35,6 +31,28 @@
       ]
     }
   ],
+  "runtime_view": {
+    "verses": {
+      "catalog": "book/purusha-sukta/verses/catalog.csv",
+      "masters": {
+        "sa": "book/purusha-sukta/verses/master_sa.csv",
+        "en": "book/purusha-sukta/verses/master_en.csv",
+        "kn": "book/purusha-sukta/verses/master_kn.csv"
+      }
+    },
+    "registries": {
+      "verses": {
+        "structural": "book/purusha-sukta/runtime/registry/verses/collection.csv",
+        "localized": {
+          "sa": "book/purusha-sukta/runtime/registry/verses/collection_sa.csv",
+          "en": "book/purusha-sukta/runtime/registry/verses/collection_en.csv",
+          "kn": "book/purusha-sukta/runtime/registry/verses/collection_kn.csv"
+        }
+      },
+      "audio": "book/purusha-sukta/runtime/registry/audio/collection.csv",
+      "images": "book/purusha-sukta/runtime/registry/image/collection.csv"
+    }
+  },
   "files": [
     {
       "path": "book/purusha-sukta/experience/sukta-chant/audio.csv",
@@ -45,16 +63,20 @@
       "hash": "2df914737b120e0adfc992308908489b885384e58e870963a71b73936ea56698"
     },
     {
-      "path": "book/purusha-sukta/registry/audio/collection.csv",
-      "hash": "173e48b3647f070d83e57ae181a6b32fc66068f4cfe00df86424fbb11b6d7163"
+      "path": "book/purusha-sukta/registry/verse/collection-metadata-variants.csv",
+      "hash": "2913afb04141479de3b817b4b8fc919b272cdc878ebebd1f36b956fdd9e5aeee"
     },
     {
-      "path": "book/purusha-sukta/registry/image/collection.csv",
-      "hash": "8e1e4d3c4db7357bd37c3e93db6d758a11a77c4492c03c056270f3a94d07c171"
+      "path": "book/purusha-sukta/registry/verse/collection.csv",
+      "hash": "8ac5c671a456fa309e05ef7d41b9abbe777551b5f0258545be51210cbcc556f0"
     },
     {
-      "path": "book/purusha-sukta/registry/verses/collection.csv",
-      "hash": "70d5443d3a57e252b339b2336c955e71ee929ea06abf8a1e110c5735bfe2e76b"
+      "path": "book/purusha-sukta/registry/verse/defaults.csv",
+      "hash": "f4f932f44d207ee52d09a2e883a61afc667dbb936a05bae2c1c14902e11e6f20"
+    },
+    {
+      "path": "book/purusha-sukta/registry/verse/text-variants.csv",
+      "hash": "5eaa28695d196218497b779f2274bad2f021ffb7a56ce5d446fddebfc985aa02"
     },
     {
       "path": "book/purusha-sukta/registry/verses/collection_en.csv",
@@ -66,6 +88,30 @@
     },
     {
       "path": "book/purusha-sukta/registry/verses/collection_sa.csv",
+      "hash": "e87de1c398292024b67030a31fc9f9ac178441703e76261ff7c26d120000b5e8"
+    },
+    {
+      "path": "book/purusha-sukta/runtime/registry/audio/collection.csv",
+      "hash": "173e48b3647f070d83e57ae181a6b32fc66068f4cfe00df86424fbb11b6d7163"
+    },
+    {
+      "path": "book/purusha-sukta/runtime/registry/image/collection.csv",
+      "hash": "8e1e4d3c4db7357bd37c3e93db6d758a11a77c4492c03c056270f3a94d07c171"
+    },
+    {
+      "path": "book/purusha-sukta/runtime/registry/verses/collection.csv",
+      "hash": "70d5443d3a57e252b339b2336c955e71ee929ea06abf8a1e110c5735bfe2e76b"
+    },
+    {
+      "path": "book/purusha-sukta/runtime/registry/verses/collection_en.csv",
+      "hash": "29b976958e79b09c9c75a891e730c1346a5f9b6656a5fdd504bed7517b905e11"
+    },
+    {
+      "path": "book/purusha-sukta/runtime/registry/verses/collection_kn.csv",
+      "hash": "26458a4d8fb0d482da0865241a67569570a088d4328992a03169d8f2922d1d90"
+    },
+    {
+      "path": "book/purusha-sukta/runtime/registry/verses/collection_sa.csv",
       "hash": "e87de1c398292024b67030a31fc9f9ac178441703e76261ff7c26d120000b5e8"
     },
     {
@@ -85,6 +131,5 @@
       "hash": "da49bf2060936a21f7fed376337ec3556a543619a34211efcafc4b4a5e135774"
     }
   ],
-  "updated_at": "2026-11-06T01:46:53.717Z",
-  "content_kit_version": "3.20261107-051550"
+  "updated_at": "2026-11-08T06:45:59.086Z"
 }

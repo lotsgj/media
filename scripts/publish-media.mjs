@@ -1,4 +1,5 @@
 import { createHash } from 'node:crypto';
+import { execFileSync } from 'node:child_process';
 import { readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import vm from 'node:vm';
@@ -23,5 +24,6 @@ if (result.problems.blocking.length) {
   process.exitCode = 1;
 } else {
   for (const write of result.writes) await writeFile(logicalFile(write.path), write.text);
+  if (result.writes.length) execFileSync(process.execPath, ['scripts/build-content-kit4.mjs'], { cwd: root, stdio: 'inherit' });
   console.log(result.writes.length ? `Published ${releaseLabel}: ${result.changed.join(', ')}` : `Media ${releaseLabel} is already published.`);
 }
