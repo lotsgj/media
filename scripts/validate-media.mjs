@@ -4,8 +4,8 @@ import path from 'node:path';
 import { pathToFileURL } from 'node:url';
 
 const root = path.resolve(import.meta.dirname, '..');
-const kitUrl = pathToFileURL(path.resolve(root, '../mygita/engine/js/content-kit.js')).href;
-const contractUrl = pathToFileURL(path.resolve(root, '../mygita/engine/js/media-contract.js')).href;
+const kitUrl = pathToFileURL(path.resolve(root, '../mygita-app/engine/js/content-kit.js')).href;
+const contractUrl = pathToFileURL(path.resolve(root, '../mygita-app/engine/js/media-contract.js')).href;
 const { contentTree, openMedia, publish, checkFile } = await import(kitUrl);
 const { safeMediaPath, selectMediaMount, validateDeckDescriptor } = await import(contractUrl);
 const readJson = async (relative) => JSON.parse(await readFile(path.join(root, relative), 'utf8'));

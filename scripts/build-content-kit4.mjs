@@ -3,7 +3,7 @@ import { readFile, readdir, stat, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 
 const root = path.resolve(import.meta.dirname, '..');
-const kitVersionSource = await readFile(path.resolve(root, '../mygita/engine/js/content-kit-v4-version.js'), 'utf8');
+const kitVersionSource = await readFile(path.resolve(root, '../mygita-app/engine/js/content-kit-v4-version.js'), 'utf8');
 const kitVersion = kitVersionSource.match(/CONTENT_KIT_V4_VERSION\s*=\s*'([^']+)'/)?.[1];
 if (!/^4\.\d{8}-\d{6}$/.test(kitVersion || '')) throw new Error('Unable to read the approved Content-Kit 4 version.');
 const namespaces = new Set(['book', 'audio', 'image', 'video', 'deck', 'docs', 'registry']);

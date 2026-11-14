@@ -6,7 +6,7 @@ import vm from 'node:vm';
 import { pathToFileURL } from 'node:url';
 
 const root = path.resolve(import.meta.dirname, '..');
-const mygita = path.resolve(root, '../mygita');
+const mygita = path.resolve(root, '../mygita-app');
 const kit = await import(pathToFileURL(path.join(mygita, 'engine/js/content-kit.js')).href);
 const logicalFile = (logical) => path.join(root, logical);
 const readText = (logical) => readFile(logicalFile(logical), 'utf8');
