@@ -1,6 +1,6 @@
 {
   "content_version": "2026.11.08.1",
-  "updated_at": "2026-11-21T11:23:14.133Z",
+  "updated_at": "2026-11-21T15:55:48.698Z",
   "mounts": [
     {
       "mount_id": "media",
@@ -10,7 +10,7 @@
         {
           "id": "all",
           "path": "files.json",
-          "hash": "dc865175d35d9baf7255ea3a8b524af1a6b7bb41c680fbfcb0b813bc9177c20f"
+          "hash": "74871c76ab8c95a25877d7338127ac641032633f7310ed4ba98db94511531fee"
         }
       ]
     }
@@ -19,17 +19,17 @@
     {
       "book_id": "bhagavad-gita",
       "manifest": "book/bhagavad-gita/manifest.json",
-      "manifest_hash": "597664725e883d659e8cae6c48ff7273cb150c18ee2e6db06e3bdeae5fceff85"
+      "manifest_hash": "c8650b0e39792d42e2b1758abda6d67b20333da8914fb40c9406b043789cc09b"
     },
     {
       "book_id": "ganesha-atharva",
       "manifest": "book/ganesha-atharva/manifest.json",
-      "manifest_hash": "960f2605812d20b8bda6725b6c5bfa7286de22ea67f80c767f0aa9f79b9c7d4d"
+      "manifest_hash": "8430a6266f183203367e92a2337ba4ac23693ff2cf58de976ee242f267b7a5cc"
     },
     {
       "book_id": "purusha-sukta",
       "manifest": "book/purusha-sukta/manifest.json",
-      "manifest_hash": "dde4081d02edb2631e533ac65c4815430f5e2bda530c8548d232d70b66a3d43e"
+      "manifest_hash": "ee194fc2c7782958e303650f72d29f96d5dd58598de2f0020d237727152e8898"
     }
   ],
   "registries": {
@@ -37,6 +37,6 @@
     "contributors": "registry/contributors.csv",
     "cue_purposes": "registry/cue-purposes.csv"
   },
-  "content_kit_version": "4.20261119-120000",
-  "minimum_kit_version": "4.20261119-120000"
+  "content_kit_version": "4.20261121-120000",
+  "minimum_kit_version": "4.20261121-120000"
 }

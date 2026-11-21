@@ -1,5 +1,5 @@
 {
-  "content_kit_version": "4.20261119-120000",
+  "content_kit_version": "4.20261121-120000",
   "mount_id": "media",
   "files": [
     {
@@ -9313,7 +9313,7 @@
       "media_type": "book",
       "mime_type": "application/json",
       "size": 214243,
-      "hash": "597664725e883d659e8cae6c48ff7273cb150c18ee2e6db06e3bdeae5fceff85",
+      "hash": "c8650b0e39792d42e2b1758abda6d67b20333da8914fb40c9406b043789cc09b",
       "contract": "manifest",
       "state": "active"
     },
@@ -9384,8 +9384,8 @@
       "path": "book/bhagavad-gita/registry/audio/collection.csv",
       "media_type": "book",
       "mime_type": "text/csv",
-      "size": 168,
-      "hash": "3b2ae61e49fa1458cb067a7f0a91f370de99bf1a9ff42ea0c4ec4e479ebc448d",
+      "size": 150,
+      "hash": "b92990c08f4467666ed45b8a6e5b6cca0b5a9da386a50399a6f48499ee1757b7",
       "contract": "ck4-collection-registry",
       "state": "active"
     },
@@ -9420,8 +9420,8 @@
       "path": "book/bhagavad-gita/registry/audio/recording-variants.csv",
       "media_type": "book",
       "mime_type": "text/csv",
-      "size": 353,
-      "hash": "18834cb578eaca59da730cf7d06ee47dd2ed0bb793afe1161e2211bb6c1e0ca9",
+      "size": 361,
+      "hash": "5cc8a55a4cba04b7aaa282eb910d8426fc9a274529c15ec841e51f909a179a76",
       "contract": "ck4-variant-registry",
       "state": "active"
     },
@@ -9663,8 +9663,8 @@
       "path": "book/bhagavad-gita/runtime/registry/audio/collection.csv",
       "media_type": "book",
       "mime_type": "text/csv",
-      "size": 421,
-      "hash": "253bcfcf9d44666e842024f2f45e463d1156850d4dbecfcc632b994c26e2f81a",
+      "size": 428,
+      "hash": "4102da776a748c5ddd519eb863ba3e171c533305ad9eddae9de8af1d3a958624",
       "contract": "runtime-audio-registry",
       "state": "active"
     },
@@ -9790,7 +9790,7 @@
       "media_type": "book",
       "mime_type": "application/json",
       "size": 5067,
-      "hash": "960f2605812d20b8bda6725b6c5bfa7286de22ea67f80c767f0aa9f79b9c7d4d",
+      "hash": "8430a6266f183203367e92a2337ba4ac23693ff2cf58de976ee242f267b7a5cc",
       "contract": "manifest",
       "state": "active"
     },
@@ -9970,7 +9970,7 @@
       "media_type": "book",
       "mime_type": "application/json",
       "size": 4961,
-      "hash": "dde4081d02edb2631e533ac65c4815430f5e2bda530c8548d232d70b66a3d43e",
+      "hash": "ee194fc2c7782958e303650f72d29f96d5dd58598de2f0020d237727152e8898",
       "contract": "manifest",
       "state": "active"
     },
@@ -10383,8 +10383,8 @@
       "path": "registry/contributors.csv",
       "media_type": "registry",
       "mime_type": "text/csv",
-      "size": 278,
-      "hash": "35c9e7c5068e5585d4278a37487581d94217ea5cb42ea425b192f7b0cbb0e294",
+      "size": 231,
+      "hash": "9f76516d3d12e3487e25f9a778a3f8ea5a41d2ed160ea8268bf14e8f2a62a5b7",
       "contract": "ck4-contributors-registry",
       "state": "active"
     },
