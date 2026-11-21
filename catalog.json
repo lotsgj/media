@@ -1,6 +1,6 @@
 {
   "content_version": "2026.11.08.1",
-  "updated_at": "2026-11-21T07:39:18.557Z",
+  "updated_at": "2026-11-21T11:23:14.133Z",
   "mounts": [
     {
       "mount_id": "media",
@@ -10,7 +10,7 @@
         {
           "id": "all",
           "path": "files.json",
-          "hash": "ec5156f14a2765ee87c2534cb9ebfcf6d493700d5a9b2574aa013facb18a4612"
+          "hash": "dc865175d35d9baf7255ea3a8b524af1a6b7bb41c680fbfcb0b813bc9177c20f"
         }
       ]
     }
@@ -19,7 +19,7 @@
     {
       "book_id": "bhagavad-gita",
       "manifest": "book/bhagavad-gita/manifest.json",
-      "manifest_hash": "de21479d2baa5b5e73f34a1e584fbccb6c81e95ee2709876812c5cd964aac225"
+      "manifest_hash": "597664725e883d659e8cae6c48ff7273cb150c18ee2e6db06e3bdeae5fceff85"
     },
     {
       "book_id": "ganesha-atharva",

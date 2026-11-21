@@ -9313,7 +9313,7 @@
       "media_type": "book",
       "mime_type": "application/json",
       "size": 214243,
-      "hash": "de21479d2baa5b5e73f34a1e584fbccb6c81e95ee2709876812c5cd964aac225",
+      "hash": "597664725e883d659e8cae6c48ff7273cb150c18ee2e6db06e3bdeae5fceff85",
       "contract": "manifest",
       "state": "active"
     },
@@ -9384,8 +9384,8 @@
       "path": "book/bhagavad-gita/registry/audio/collection.csv",
       "media_type": "book",
       "mime_type": "text/csv",
-      "size": 147,
-      "hash": "3128287599453f19c59485e10a7c205692d519950a41598adc985f3f4291c0b4",
+      "size": 168,
+      "hash": "3b2ae61e49fa1458cb067a7f0a91f370de99bf1a9ff42ea0c4ec4e479ebc448d",
       "contract": "ck4-collection-registry",
       "state": "active"
     },
@@ -9420,8 +9420,8 @@
       "path": "book/bhagavad-gita/registry/audio/recording-variants.csv",
       "media_type": "book",
       "mime_type": "text/csv",
-      "size": 358,
-      "hash": "77a6cc13119e47bbbefbb13b01b5cc379a166f76745cf109e189e5bf2a1a3689",
+      "size": 353,
+      "hash": "18834cb578eaca59da730cf7d06ee47dd2ed0bb793afe1161e2211bb6c1e0ca9",
       "contract": "ck4-variant-registry",
       "state": "active"
     },
@@ -10371,11 +10371,20 @@
       "state": "active"
     },
     {
+      "path": "image/profile/acharya/GJ-AKVK-VASD-1.webp",
+      "media_type": "image",
+      "mime_type": "image/webp",
+      "size": 20274,
+      "hash": "d9c83cdbc574d0a81be8deb8aa160b9dbac2bc618964498d83a1cf01f7006186",
+      "contract": "asset",
+      "state": "active"
+    },
+    {
       "path": "registry/contributors.csv",
       "media_type": "registry",
       "mime_type": "text/csv",
-      "size": 203,
-      "hash": "48771b71bc765a9f94ce9a41f3acb53360fe03c1ab6f750c012f55062773b54d",
+      "size": 278,
+      "hash": "35c9e7c5068e5585d4278a37487581d94217ea5cb42ea425b192f7b0cbb0e294",
       "contract": "ck4-contributors-registry",
       "state": "active"
     },

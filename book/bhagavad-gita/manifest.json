@@ -4303,7 +4303,7 @@
     },
     {
       "path": "book/bhagavad-gita/registry/audio/collection.csv",
-      "hash": "3128287599453f19c59485e10a7c205692d519950a41598adc985f3f4291c0b4"
+      "hash": "3b2ae61e49fa1458cb067a7f0a91f370de99bf1a9ff42ea0c4ec4e479ebc448d"
     },
     {
       "path": "book/bhagavad-gita/registry/audio/defaults.csv",
@@ -4319,7 +4319,7 @@
     },
     {
       "path": "book/bhagavad-gita/registry/audio/recording-variants.csv",
-      "hash": "77a6cc13119e47bbbefbb13b01b5cc379a166f76745cf109e189e5bf2a1a3689"
+      "hash": "18834cb578eaca59da730cf7d06ee47dd2ed0bb793afe1161e2211bb6c1e0ca9"
     },
     {
       "path": "book/bhagavad-gita/registry/deck/collection-metadata-variants.csv",
@@ -4566,5 +4566,5 @@
       "hash": "e56776bf8753b5489c83c7bc9ecee0aca36276ec8141bb0de6fa55bc6166b499"
     }
   ],
-  "updated_at": "2026-11-21T07:39:18.557Z"
+  "updated_at": "2026-11-21T11:23:14.133Z"
 }
