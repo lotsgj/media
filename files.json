@@ -10362,11 +10362,20 @@
       "state": "active"
     },
     {
+      "path": "image/profile/acharya/GJ-09VX-E4D8-1.webp",
+      "media_type": "image",
+      "mime_type": "image/webp",
+      "size": 20274,
+      "hash": "d9c83cdbc574d0a81be8deb8aa160b9dbac2bc618964498d83a1cf01f7006186",
+      "contract": "asset",
+      "state": "active"
+    },
+    {
       "path": "registry/contributors.csv",
       "media_type": "registry",
       "mime_type": "text/csv",
-      "size": 114,
-      "hash": "eab4f7735cc7b20c618b3f20af5976d8c10ed7641f85a241d89a35727a3dfb83",
+      "size": 203,
+      "hash": "48771b71bc765a9f94ce9a41f3acb53360fe03c1ab6f750c012f55062773b54d",
       "contract": "ck4-contributors-registry",
       "state": "active"
     },
