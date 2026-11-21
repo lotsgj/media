@@ -1,7 +1,7 @@
 {
   "book_id": "ganesha-atharva",
   "content_version": "2026.11.08.1",
-  "content_kit_version": "4.20261109-101633",
+  "content_kit_version": "4.20261119-120000",
   "name": {
     "en": "Gaṇeśātharvaśīrṣam",
     "kn": "ಗಣೇಶ ಅಥರ್ವಶೀರ್ಷ",
@@ -131,5 +131,5 @@
       "hash": "d7efef5f7f8bebfe5cc84837a1c642c525e01dd2fd6b641ef8a24396c81bb9d7"
     }
   ],
-  "updated_at": "2026-11-08T06:45:59.086Z"
+  "updated_at": "2026-11-21T07:39:18.557Z"
 }
