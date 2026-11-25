@@ -10434,6 +10434,15 @@
       "state": "active"
     },
     {
+      "path": "image/profile/acharya/GJ-R6D4-VTZR-1.webp",
+      "media_type": "image",
+      "mime_type": "image/webp",
+      "size": 37808,
+      "hash": "b6c4c064886ccd2996bd90b58e1344897960be8f8675d0e24f49bf3234630c0b",
+      "contract": "asset",
+      "state": "active"
+    },
+    {
       "path": "image/profile/acharya/GJ-RXXN-NX8X-1.webp",
       "media_type": "image",
       "mime_type": "image/webp",
@@ -10443,11 +10452,20 @@
       "state": "active"
     },
     {
+      "path": "image/profile/acharya/GJ-W6VF-GVZ8-1.webp",
+      "media_type": "image",
+      "mime_type": "image/webp",
+      "size": 38770,
+      "hash": "05ec4ac5b1c7f8a7f8a886e752d890f4c82be971bec44c223778d352df0d45b7",
+      "contract": "asset",
+      "state": "active"
+    },
+    {
       "path": "registry/contributors.csv",
       "media_type": "registry",
       "mime_type": "text/csv",
-      "size": 791,
-      "hash": "798250d17a443f6f1166ed21a91a19351c9d970fbe23900178560cc64a67049d",
+      "size": 948,
+      "hash": "3316a5746b5c08f4c3a9d053e91b8c18fa0799630e09bb16dcb27edf5effa742",
       "contract": "ck4-contributors-registry",
       "state": "active"
     },
