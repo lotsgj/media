@@ -10371,6 +10371,15 @@
       "state": "active"
     },
     {
+      "path": "image/profile/acharya/GJ-4ZH7-KJTG-1.webp",
+      "media_type": "image",
+      "mime_type": "image/webp",
+      "size": 31788,
+      "hash": "31da5c00c0304f555a449255656f22f9e428f50b98f5645806eb93769c5d345a",
+      "contract": "asset",
+      "state": "active"
+    },
+    {
       "path": "image/profile/acharya/GJ-AKVK-VASD-1.webp",
       "media_type": "image",
       "mime_type": "image/webp",
@@ -10380,11 +10389,38 @@
       "state": "active"
     },
     {
+      "path": "image/profile/acharya/GJ-ECM3-H9KP-1.webp",
+      "media_type": "image",
+      "mime_type": "image/webp",
+      "size": 39234,
+      "hash": "1d6a0fbec690e60f1651d67baa4a52667a6661371f6d78fe3ab1013bd498d038",
+      "contract": "asset",
+      "state": "active"
+    },
+    {
+      "path": "image/profile/acharya/GJ-M1KX-9M4K-1.webp",
+      "media_type": "image",
+      "mime_type": "image/webp",
+      "size": 22744,
+      "hash": "7b80f750545f3014d3e3d413fef0bd0798958edc16b2b017f2230e556cffd2a5",
+      "contract": "asset",
+      "state": "active"
+    },
+    {
+      "path": "image/profile/acharya/GJ-RXXN-NX8X-1.webp",
+      "media_type": "image",
+      "mime_type": "image/webp",
+      "size": 27932,
+      "hash": "218645e0a1833e685ec03a9c24423561fa2582377068e1974b1be5c70175b425",
+      "contract": "asset",
+      "state": "active"
+    },
+    {
       "path": "registry/contributors.csv",
       "media_type": "registry",
       "mime_type": "text/csv",
-      "size": 231,
-      "hash": "c68e51ee22d4c9165b4b7dad08f90ad8752c2150b6308d861cec76f8b23d377f",
+      "size": 582,
+      "hash": "776eebbfa4fbd114f28cbafd7bd11493b01ff74bade301e341a738de8206765c",
       "contract": "ck4-contributors-registry",
       "state": "active"
     },
