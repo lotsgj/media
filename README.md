@@ -12,4 +12,4 @@ Its stable top-level contract uses singular media names:
 
 MyGita owns the application, product identity, renderer configuration, interface translations and Content-Kit implementation. This repository owns mutable scripture content. Logical paths remain the readable identity used by books, collections and experiences.
 
-Run `pnpm build:inventory` after physical files or book manifests change, then run `pnpm test`. A content deployment must publish files and secondary mounts before the primary `catalog.json`, with `media.ver` last. Full writable multi-mount publication arrives in Content-Kit 3 Tranche 2.
+Run `pnpm build:inventory` after physical files or book manifests change, then run `pnpm test`. The inventory rules live in `scripts/inventory.cjs`, shared with media-admin, which rebuilds the inventory in the browser when it writes contributor edits. A content deployment must publish files and secondary mounts before the primary `catalog.json`, with `media.ver` last. Full writable multi-mount publication arrives in Content-Kit 3 Tranche 2.
