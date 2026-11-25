@@ -10362,11 +10362,11 @@
       "state": "active"
     },
     {
-      "path": "image/profile/acharya/GJ-09VX-E4D8-1.webp",
+      "path": "image/profile/acharya/GJ-09VX-E4D8-2.webp",
       "media_type": "image",
       "mime_type": "image/webp",
-      "size": 20274,
-      "hash": "d9c83cdbc574d0a81be8deb8aa160b9dbac2bc618964498d83a1cf01f7006186",
+      "size": 21914,
+      "hash": "42ac75462ede80ec7b568221873c7a0841bc7e4ec6f158dba2e6b773e199cb4d",
       "contract": "asset",
       "state": "active"
     },
@@ -10384,7 +10384,7 @@
       "media_type": "registry",
       "mime_type": "text/csv",
       "size": 231,
-      "hash": "9f76516d3d12e3487e25f9a778a3f8ea5a41d2ed160ea8268bf14e8f2a62a5b7",
+      "hash": "c68e51ee22d4c9165b4b7dad08f90ad8752c2150b6308d861cec76f8b23d377f",
       "contract": "ck4-contributors-registry",
       "state": "active"
     },
